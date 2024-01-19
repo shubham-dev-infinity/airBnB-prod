@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBnB</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
+
+    <link rel="stylesheet" href="/Assert/Css/style.css">
+    <link rel="stylesheet" href="/Assert/Css/nice-select.css">
+    <link rel="stylesheet" href="/Assert/Css/responsive.css">
+
+</head>
+
+<body>
+    <div class="row" id="body-row">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="sidebar-expanded">
+            <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="logo">
+                                <img src="/Assert/images/THE LANDLORD.png" alt="">
+                                <img src="/Assert/images/ACADEMY.png" alt="">
+                            </div>
+                            <div>
+                                <a class="nav-link" href="b&h.html">
+                                    <div class="sb-nav-link-icon">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                    <p class="sidbar_text">Buy and Hold</p>
+                                </a>
+                                <a class="nav-link" href="BRRRR.html">
+                                    <div class="sb-nav-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M6.66667 20H17.9167C19.0667 20 20 19.0667 20 17.9167V17.0833C20 15.9333 19.0667 15 17.9167 15H6.66667V20ZM6.66667 13.3333H17.9167C19.0667 13.3333 20 12.4 20 11.25V8.75C20 7.6 19.0667 6.66667 17.9167 6.66667H6.66667V13.3333ZM5 6.66667V13.3333H2.08333C0.933333 13.3333 0 12.4 0 11.25V8.75C0 7.6 0.933333 6.66667 2.08333 6.66667H5ZM6.66667 5H17.9167C19.0667 5 20 4.06667 20 2.91667V2.08333C20 0.933333 19.0667 0 17.9167 0H6.66667V5ZM5 0V5H2.08333C0.933333 5 0 4.06667 0 2.91667V2.08333C0 0.933333 0.933333 0 2.08333 0H5ZM5 15V20H2.08333C0.933333 20 0 19.0667 0 17.9167V17.0833C0 15.9333 0.933333 15 2.08333 15H5Z"
+                                                fill="#08183A" />
+                                        </svg>
+                                    </div>
+                                    <p class="sidbar_text">BRRRR</p>
+                                </a>
+                                <a class="nav-link" href="index.html">
+                                    <div class="sb-nav-link-icon">
+                                        <i class="fa-brands fa-airbnb"></i>
+                                    </div>
+                                    <p class="sidbar_text">AirBnB</p>
+                                </a>
+                                <a class="nav-link" href="commercial.html">
+                                    <div class="sb-nav-link-icon">
+                                        <i class="fa-solid fa-building"></i>
+                                    </div>
+                                    <p class="sidbar_text">Commercial Property</p>
+                                </a>
+                            </div>
+                            <div id="close_Nav_Button">
+                                <button class="nav_Close_Button">Close </button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="mobile_header">
+            <div class="logo_With_Nav">
+                <div class="logo">
+                    <img src="/Assert/images/THE LANDLORD.png" alt="">
+                    <img src="/Assert/images/ACADEMY.png" alt="">
+                </div>
+                <div>
+                    <div class="bars_Background" id="nav_Bars">
+                        <i class="fa-solid fa-bars"></i> </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN -->
+        <div class="col main_Area">
+            <div class="container-fluid property_Parameter_Wrapper">
+                <div class="calculator_Heading">
+                    <div>
+                        <h1 id="main-title" class="buy_hold_title">AirBnB</h1>
+                    </div>
+                    <div class="model_Tabs">
+                        <button class="model_Tab_Btn model_Tab_Btn_Active" id="purchase_Tab">Purchase
+                            Model</button>
+                        <button class="model_Tab_Btn" id="rental_Tab">Rental Model</button>
+                    </div>
+                </div>
+            </div>
+            <div id="airbnb_Purchase_Model" class="calculator_Models show_Model">
+                <div class="buy_input_box">
+                    <div class="row gy-1">
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput"
+                                class="form-label property_Parameter_Lable">STREET</label>
+                            <div class="input-group column mb-2">
+                                <input type="text" id="street_name" class="form-control" placeholder="Street Name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput"
+                                class="form-label property_Parameter_Lable ">SUBURB</label>
+                            <div class="input-group column mb-2">
+                                <input type="text" id="subrub_name" class="form-control" placeholder="Subrub Name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput" class="form-label property_Parameter_Lable">City</label>
+                            <div class="input-group column mb-2">
+                                <input type="text" id="city_name" class="form-control" placeholder="City Name" required>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput" class="form-label property_Parameter_Lable">STATE</label>
+                            <div class="input-group column mb-2">
+                                <select id="state_name" custom_select>
+                                    <option value="ACT">ACT</option>
+                                    <option value="NSW">NSW</option>
+                                    <option value="NT">NT</option>
+                                    <option value="QLD">QLD</option>
+                                    <option value="SA">SA</option>
+                                    <option value="TAS">TAS</option>
+                                    <option value="VIC">VIC</option>
+                                    <option value="WA">WA</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput" class="form-label property_Parameter_Lable">TYPE</label>
+                            <div class="input-group column">
+                                <select id="type" custom_select>
+                                    <option value="Unit">Unit</option>
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="Villa">Villa</option>
+                                    <option value="Duplex">Duplex</option>
+                                    <option value="Townhouse">Townhouse</option>
+                                    <option value="House">House</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput"
+                                class="form-label property_Parameter_Lable">BEDROOMS</label>
+                            <div class="input-group column">
+                                <select id="bedrooms" custom_select>
+                                    <option value="1 Bedrooms">1 Bedroom</option>
+                                    <option value="2 Bedrooms">2 Bedrooms</option>
+                                    <option value="3 Bedrooms">3 Bedrooms</option>
+                                    <option value="4 Bedrooms">4 Bedrooms</option>
+                                    <option value="5+ Bedrooms">5+ Bedrooms</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput"
+                                class="form-label property_Parameter_Lable">BATHROOM</label>
+                            <div class="input-group column">
+                                <select id="bathrooms" custom_select>
+                                    <option value="1 Bathroom">1 Bathroom</option>
+                                    <option value="2 Bathroom">2 Bathrooms</option>
+                                    <option value="3 Bathroom">3 Bathrooms</option>
+                                    <option value="4 Bathroom">4+ Bathrooms</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput"
+                                class="form-label property_Parameter_Lable">PARKING</label>
+                            <div class="input-group column">
+                                <select id="parking" custom_select>
+                                    <option value="No Parking">No Parking</option>
+                                    <option value="Single Car Space">Single Car Space</option>
+                                    <option value="Double Car Space">Double Car Space</option>
+                                    <option value="Single Garage">Single Garage</option>
+                                    <option value="Double Garage">Double Garage</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- widget section -->
+                <div class="cash_box container-fluid">
+                    <div class="row justify-content-center g-3">
+                        <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_1">
+                            <div class="kafelki_item">
+                                <div class="kafelki_number_container">
+                                    <img src="/Assert/images/wallet.svg" alt="">
+                                </div>
+                                <p class="kafelki_text">PURCHASE PRICE</p>
+                                <p class="kafelki_name" id="widget-purchase-price">$0</p>
+                            </div>
+                            <!-- <div class="icon">
+                                    <i class="fa-solid fa-wallet"></i>
+                                </div> -->
+                        </div>
+                        <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_2">
+                            <div class="kafelki_item">
+                                <div class="kafelki_number_container">
+                                    <img src="/Assert/images/cash.svg" alt="">
+                                </div>
+                                <p class="kafelki_text">CASH REQUIRED</p>
+                                <p class="kafelki_name" id="widget-cash-required">$0</p>
+                            </div>
+                            <!-- <div class="icon">
+                                    <i class="fa-solid fa-sack-dollar"></i>
+                                </div> -->
+                        </div>
+                        <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_3">
+                            <div class="kafelki_item">
+                                <div class="kafelki_number_container">
+                                    <img src="/Assert/images/page.svg" alt="">
+                                </div>
+                                <p class="kafelki_text">TOTAL EXPENSES (I/O)</p>
+                                <p class="kafelki_name" id="widget-value-add">$0</p>
+                            </div>
+                            <!-- <div class="icon">
+                                    <i class="fa-solid fa-receipt"></i>
+                                </div> -->
+                        </div>
+                        <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_4">
+                            <div class="kafelki_item">
+                                <div class="kafelki_number_container">
+                                    <img src="/Assert/images/bank.svg" alt="">
+                                </div>
+                                <p class="kafelki_text">DAILY RATE</p>
+                                <p class="kafelki_name" id="widget-equity-io">$0</p>
+                            </div>
+                            <!-- <div class="icon">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                </div> -->
+                        </div>
+                        <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_5">
+                            <div class="kafelki_item">
+                                <div class="kafelki_number_container">
+                                    <img src="/Assert/images/page.svg" alt="">
+                                </div>
+                                <p class="kafelki_text">Net Profit (P&I)</p>
+                                <p class="kafelki_name" id="widget-renovation-cost">$0</p>
+                            </div>
+                            <!-- <div class="icon">
+                                    <i class="fa-solid fa-piggy-bank"></i>
+                                </div> -->
+                        </div>
+                        <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_6">
+                            <div class="kafelki_item">
+                                <div class="kafelki_number_container">
+                                    <img src="/Assert/images/cash2.svg" alt="">
+                                </div>
+                                <p class="kafelki_text">Return on Equity</p>
+                                <p class="kafelki_name" id="widget-rental-increase">0%</p>
+                            </div>
+                            <!-- <div class="icon">
+                                    <i class="fa-solid fa-money-bills"></i>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- property section -->
+                <div class="wrap">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-xl-4 col-lg-6 col-md-6 p-2">
+                            <div class="property_box">
+                                <h2 class="card-title">PROPERTY</h2>
+                                <div class="property_price">
+                                    <div class="purchase_title">
+                                        <h6 class="purchase_title">PURCHASE PRICE</h6>
+                                        <div class="purchase_value">
+                                            <div class="property_input">
+                                                <label for="market-value" class="purchase_label">Market Value</label>
+                                                <input type="text" class="property_inner_input amountInput"
+                                                    name="market-value" id="market-value" placeholder="">
+                                            </div>
+                                            <div class="property_input">
+                                                <label for="purchase-price" class="purchase_label">Purchase
+                                                    Price</label>
+                                                <input type="text" class="property_inner_input amountInput"
+                                                    name="purchase-price" id="purchase-price" placeholder="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="infoContainer">
+                                        <div class="row discount">
+                                            <div class="col-md-12">
+                                                <div class="d-flex">
+                                                    <div class="col-md-6 discount_text d_text"> Discount by</div>
+                                                    <div class="discount_text center green discount-text"
+                                                        id="discount-percent">
+                                                        17%</div>
+
+                                                    <div class="col-md-4 discount_text end d_text" id="discount-price">
+                                                        $10,000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row overprice">
+                                            <div class="col-md-12">
+                                                <div class="d-flex">
+                                                    <div class="col-md-6 discount_text d_text"> Overpriced by </div>
+                                                    <div class="discount_text  center red discount-text"
+                                                        id="overpriced-percent">17%</div>
+                                                    <div class="col-md-4 discount_text end d_text"
+                                                        id="overpriced-price">
+                                                        $10,000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-message" style="font-weight: bold; text-transform: uppercase;">
+                                    </div>
+                                </div>
+                                <div class="property_price">
+                                    <h3 class="purchase_title">PROPERTY EXPENSES</h3>
+                                    <div class="down_payment">
+                                        <div class="property_input">
+                                            <label for="down-payment" class="purchase_label">Down
+                                                Payment</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                name="down-payment" id="down-payment" placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="property-improvements" class="purchase_label">Property
+                                                Improvements</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                name="property-improvements" id="property-improvements" placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="formGroupExampleInput" class="purchase_label"
+                                                for="legals">Legals
+                                                (lawyer/conveyancers)</label>
+                                            <input type="text" class="property_inner_input amountInput" name="legals"
+                                                id="legals" placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="stamp-duty-calculator" class="purchase_label">Stamp Duty
+                                                Calculator</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                name="stamp-duty-calculator" id="stamp-duty-calculator" placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="buyer-agent-fees" class="purchase_label">Buyer's Agent
+                                                Fees</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                name="buyer-agent-fees" id="buyer-agent-fees" placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="other-costs" class="purchase_label">Other
+                                                Costs</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                name="other-costs" id="other-costs" placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="str-setupCost" class="purchase_label">STR Set Up
+                                                Costs</label>
+                                            <span class="str-setupCost" name="str-setupCost"
+                                                id="str-setupCost">$0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="cash-required" class="total_cash">
+                                    <h3>TOTAL CASH REQUIRED</h3>
+                                    <h3 id="total-cash-required"> $0</h3>
+                                </div>
+                                <div class="property_price">
+                                    <h3 class="purchase_title">LOAN ESTABLISHMENT EXPENSES (CAPITALISED)</h3>
+                                    <div class="purchase_value">
+                                        <div class="property_input">
+                                            <label for="loan-establishment-fee" class="purchase_label">Loan
+                                                Establishment
+                                                Fee</label>
+                                            <input type="text" class="property_inner_input"
+                                                name="loan-establishment-fee" id="loan-establishment-fee"
+                                                placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="property-valuation" class="purchase_label">Property
+                                                Valuation</label>
+                                            <input type="text" class="property_inner_input" name="property-valuation"
+                                                id="property-valuation" placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="lender-mortgage-insurance" class="purchase_label">LMI
+                                                (Lender's
+                                                Mortgage
+                                                Insurance)</label>
+                                            <input type="text" class="property_inner_input"
+                                                name="lender-mortgage-insurance" id="lender-mortgage-insurance"
+                                                placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="other-loan-costs" class="purchase_label">Other Loan
+                                                Costs</label>
+                                            <input type="text" class="property_inner_input" name="other-loan-costs"
+                                                id="other-loan-costs" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="total_loan">
+                                        <p class="d_text">TOTAL LOAN ESTB. EXPENSES </p>
+                                        <div class=" end d_text" id="total-expenses-amount">$58,978</div>
+                                    </div>
+
+
+                                </div>
+                                <div id="total-purchase-price" class="total_cash">
+                                    <h3>TOTAL PURCHASE PRICE</h3>
+                                    <h3 id="total-purchasePrice">$382,921</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-xl-4 col-lg-6 col-md-6 p-2">
+                            <div class="property_box">
+                                <h2>Annual Property Expenses</h2>
+                                <div class="property_price">
+                                    <h3 class="purchase_title">PROPERTY EXPENSES</h3>
+                                    <div class="purchase_value">
+                                        <div class="property_input">
+                                            <label for="rates" class="purchase_label">Rates</label>
+                                            <input type="text" class="property_inner_input amountInput" id="rate_amount"
+                                                placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="building_insurance" class="purchase_label">Building
+                                                Insurance</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="building_insurance_amount" placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="landlord_insurance" class="purchase_label">Landlord's
+                                                Insurance</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="landlord_insurance_amount" placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="formGroupExampleInput" class="purchase_label">Body
+                                                Corp/Strata
+                                                Fees</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="strata_fees_amount" placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="land_tax" class="purchase_label">Land
+                                                Tax</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="land_tax_amount" placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="formGroupExampleInput"
+                                                class="purchase_label">Maintenance</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="maintenance_amount" placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <div>
+                                                <label for="management_fees" class="purchase_label">Property Management
+                                                    Fees</label>
+                                            </div>
+                                            <div class="input-icon input-icon-right"
+                                                style="display: flex; gap: 6px; align-items: center;">
+                                                <input type="text" id="management_fees_amount" class="form-control"
+                                                    placeholder="" style="width: 60px;
+                                       padding: 2px; padding-right: 22px;" />
+
+                                                <span id="management_fees"></span>
+                                            </div>
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="rates" class="purchase_label">Water</label>
+                                            <input type="text" class="property_inner_input amountInput" id="water"
+                                                placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="building_insurance" class="purchase_label">Electricity</label>
+                                            <input type="text" class="property_inner_input amountInput" id="electricity"
+                                                placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="landlord_insurance" class="purchase_label">Internet</label>
+                                            <input type="text" class="property_inner_input amountInput" id="internet"
+                                                placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="strata_fees" class="purchase_label">Booking Software</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="booking-software" placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="land_tax" class="purchase_label">Consumables</label>
+                                            <input type="text" class="property_inner_input amountInput" id="consumables"
+                                                placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="land_tax" class="maintenance">Gifts</label>
+                                            <input type="text" class="property_inner_input amountInput" id="gifts"
+                                                placeholder="">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="maintenance" class="purchase_label">Others</label>
+                                            <input type="text" class="property_inner_input amountInput" id="others"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                    <div id="cash-required" class="total_cash">
+                                        <h3>Total Annual Expenses</h3>
+                                        <h3 id="total-amount"> $0</h3>
+                                    </div>
+                                </div>
+                                <div class="property_price">
+                                    <h3 class="purchase_title">LOAN EXPENSES</h3>
+                                    <div class="down_payment">
+                                        <div class="property_input">
+                                            <label for="formGroupExampleInput"
+                                                class="purchase_label interest_rate">Interest
+                                                Rate</label>
+                                            <input type="text" id="interest_rate" class="property_inner_input"
+                                                placeholder="">
+                                        </div>
+                                        <div class="total_loan">
+                                            <p class="annual_text fund-borrowed">Total Funds Borrowed</p>
+                                            <div class=" end annual_text fund-borrowed-amount"
+                                                id="fund-borrowed-amount">
+                                                $300.000</div>
+                                        </div>
+                                        <div class="loan_expenses principal-interest">
+                                            <p class="d_text">PRINCIPAL & INTEREST (P&I)</p>
+                                            <div class="expenses_loan_text">
+                                                <p class="annual_text"> Monthly Repayments </p>
+                                                <div class=" end annual_text monthly-repayment-amount"
+                                                    id="monthly-repayment-amount">$</div>
+                                            </div>
+                                            <div class="expenses_loan_text">
+                                                <p class="annual_text">Annual Repayments</p>
+                                                <div class="end annual_text annual-repayment-amount"
+                                                    id="annual-repayment-amount">$28,978</div>
+                                            </div>
+                                        </div>
+                                        <div class="loan_expenses">
+                                            <p class="d_text">INTEREST ONLY (I/O)</p>
+                                            <div class="expenses_loan_text">
+                                                <p class="annual_text">Annual Repayments</p>
+                                                <div class="end annual_text annual-repayment-amount"
+                                                    id="interest_annual_repayment_amount">$2,972
+                                                </div>
+                                            </div>
+                                            <div class="expenses_loan_text">
+                                                <p class="annual_text">LVR</p>
+                                                <div class="end annual_text lvr-amount" id="lvr_amount">$28,978</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total_expenses">
+                                    <h2>TOTAL EXPENSES</h2>
+                                    <div class="p_io">
+                                        <h5>P&I</h5>
+                                        <h5 id="principle-interest-amount">$30,335</h5>
+                                    </div>
+                                    <div class="p_io">
+                                        <h5>I/O</h5>
+                                        <h5 id="interest-only-amount">$27,335</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-xl-4 col-lg-6 col-md-6 p-2">
+                            <div class="property_box">
+                                <h2>TENANTS</h2>
+                                <div class="property_price">
+
+                                    <div class="property_input form-group">
+                                        <label for="internal_painting" class="purchase_label ">Furniture</label>
+                                        <input type="text" class="property_inner_input amountInput amountInput"
+                                            id="furniture" placeholder="" />
+                                    </div>
+                                    <div class="property_input form-group">
+                                        <label for="internal_painting" class="purchase_label ">Photgraph/Listing
+                                            Cost</label>
+                                        <input type="text" class="property_inner_input amountInput amountInput"
+                                            id="photograph-Listing-Cost" placeholder="" />
+                                    </div>
+                                    <div class="property_input form-group">
+                                        <label for="internal_painting" class="purchase_label ">Security</label>
+                                        <input type="text" class="property_inner_input amountInput amountInput"
+                                            id="security" placeholder="" />
+                                    </div>
+                                    <div class="property_input form-group">
+                                        <label for="internal_painting" class="purchase_label ">Other</label>
+                                        <input type="text" class="property_inner_input amountInput amountInput"
+                                            id="other-str-cost" placeholder="" />
+                                    </div>
+                                    <div class="rental_income">
+                                        <h5>TOTAL SET UP COST</h5>
+                                        <h5 class="annual_rent" id="total_renovation_cost">$0</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property_box">
+                                <h2>Annual Property Income</h2>
+                                <div class="property_price">
+                                    <h3 class="purchase_title">PROPERTY EXPENSES</h3>
+                                    <div class="down_payment annual-property-expense">
+                                        <div class="property_input">
+                                            <label for="daily-rate" class="purchase_label "> Daily Rate</label>
+                                            <input type="text" class="property_inner_input amountInput" id="daily-rate"
+                                                placeholder="">
+                                        </div>
+                                        <div class="form-group" style="display:flex;">
+                                            <div class="input-icon input-icon-right">
+                                                <input type="text" id="occupancy" placeholder=""
+                                                    style="width: 80px; margin-left: 15px; padding-right: 20px;"
+                                                    class="amountInput property_inner_input" />
+                                                <i style=" font-weight: 400;">%</i>
+                                            </div>
+                                            <label for="management_fees" style="margin-top: 2px;margin-left: 20px;">
+                                                Occupancy
+                                            </label>
+                                        </div>
+                                        <div class="rental_income">
+                                            <h5>GROSS ANNUAL RENT</h5>
+                                            <h5 class="annual_rent" id="purchased_annual_rent">$0</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="property_box">
+                                <h3 class="profit_title">Profit Analysis</h3>
+                                <div class="profit_box">
+                                    <p class="d_text">VIELD (ANNUAL)</p>
+                                    <div class="expenses_loan_text">
+                                        <p class="annual_text annual-repayment-amount" id="asPurchased-grossYield">Net
+                                            Yield
+                                        </p>
+                                        <div class=" end annual_text" id="rental-profit-text">$4,057</div>
+                                    </div>
+                                    <div class="expenses_loan_text">
+                                        <p class="annual_text">Cash on Cash Yield (P&1)</p>
+                                        <div class=" end annual_text annual-repayment-amount"
+                                            id="asPurchased-cashYield-pi">
+                                            $4,057</div>
+                                    </div>
+                                    <div class="expenses_loan_text">
+                                        <p class="annual_text">Cash on Cash Yield (1/0)</p>
+                                        <div class=" end annual_text annual-repayment-amount"
+                                            id="asPurchased-cashYield-io">
+                                            $4,057</div>
+                                    </div>
+                                </div>
+                                <div class="net_profit net-profit total-expenses-amount">
+                                    <h2>NET PROFIT ON
+                                        <label>
+                                            <h5 id="profit-text">XX%</h5>
+                                        </label> OCCUPANCY
+                                    </h2>
+                                    <div class="row">
+                                        <div class="expenses_loan_text" id="border-green">
+                                            <h2>P&I</h2>
+                                            <h2 id="asPurchased-p-i-amount">$0</h2>
+                                        </div>
+                                        <div class="expenses_loan_text">
+                                            <h2>I/O</h2>
+                                            <h2 id="asPurchased-ioAmount">$0</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="airbnb_Rental_Model" class="calculator_Models show_Model">
+                Write code for rent here
+            </div>
+            <!----------------------- AirBnB (Rental Model)  ------------>
+        </div>
+    </div><!-- Main Col END -->
+    </div><!-- body-row END -->
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="Assert/javascript/custom.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

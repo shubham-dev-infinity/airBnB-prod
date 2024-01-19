@@ -1,0 +1,915 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #898989;
+    font-family: 'Montserrat';
+    width: fit-content;
+}
+
+.card {
+    margin: 4% auto;
+    box-shadow: 0px 3.500000238418579px 10px 0px #00000061;
+}
+
+.card h1 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#submit-form button {
+    margin-top: 3%;
+}
+
+#results {
+    margin-top: 6%;
+}
+
+#gif-loader {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.alert {
+    margin: 0 auto 4% auto;
+    width: 100%;
+}
+
+.input-group {
+    width: 33%;
+    margin-bottom: 10px;
+}
+
+.input-group>.form-control {
+    width: 65%;
+    background: #001E33;
+    border-radius: 34px !important;
+    color: #fff;
+    width: 124px;
+    height: 18px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#submit-form input::placeholder {
+    color: #fff;
+}
+
+.purchase_label {
+    color: red !important;
+}
+
+.property-expenses input::placeholder,
+.property input::placeholder,
+.property-income input::placeholder {
+    color: #355485;
+    /* background: #355485; */
+
+}
+
+.row {
+    flex-wrap: nowrap;
+}
+
+.input-group-text {
+    width: 108px;
+    border: none !important;
+    background: none;
+    color: #000000;
+    text-transform: capitalize;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/* Rectangle 9 */
+.bg-info {
+    margin: 10px;
+    width: 204px;
+    height: 80px;
+    background: #001E33;
+    box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+    border-radius: 15px;
+}
+
+/* ------------------Tejaswini ------------- */
+
+
+.property,
+.property-expenses,
+.property-income {
+    margin-top: 5%;
+}
+
+.property-expenses>.card,
+.property>.card,
+.property-income>.card {
+    margin: 0;
+    border-radius: 15px;
+}
+
+.property-expenses .card,
+.property .card {
+    background-color: #355485;
+    color: white;
+    padding: 14px 14px;
+}
+
+.property-expenses .card-header,
+.property .card-header {
+    border-bottom: 3px solid white;
+    text-align: center;
+}
+
+.property-expenses .card-body h6,
+.property .card-body h6 {
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+
+.property-expenses fieldset input,
+.property-expenses .loan-expenses input,
+.property fieldset input,
+.refined-loan-calculator input {
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+    float: right;
+    width: 142px;
+    padding-right: 15px;
+}
+
+/* .property-expenses fieldset input:focus-visible{
+    border: 1px solid #ced4da;
+} */
+.property-expenses .form-group,
+.property .form-group {
+    margin-bottom: 0rem;
+}
+
+.property-expenses .total-expenses {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.property-expenses .card-title,
+.property-expenses .card-body h6,
+.loan-expenses,
+.property .card-title,
+.property .card-body h6 {
+    font-weight: bold;
+}
+
+.property-expenses .annual-property-expense,
+.property .annual-property-expense,
+.property-income .annual-property-expense {
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+.loan-expenses input {
+    text-align: end;
+}
+
+.total-amount,
+.fund-borrowed-amount,
+.monthly-repayment-amount,
+.annual-repayment-amount,
+.lvr-amount,
+.fund-refinanced,
+.refinanced-monthly-repayment,
+.refinanced-annual-repayment {
+    float: right;
+}
+
+.property-expenses .card-body h6,
+.property .card-body h6 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.property-expenses .principal-interest h6,
+.interests h6 {
+    border-bottom: none !important;
+}
+
+.property-expenses .total-expenses-amount {
+    background-color: #F94144;
+    text-align: center;
+    padding: 32px;
+    font-weight: bold;
+    border-radius: 40px;
+    margin-top: 3%;
+}
+
+.property-expenses .total-expenses-amount h5 {
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.property-expenses .total-expenses-amount .col-sm-6 span,
+.property-income .refinanced-total-expenses-amount .col-sm-6 span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* .property-expenses .total-expenses-amount .col-sm-6:not(:last-child)::after,
+.property-income .refinanced-total-expenses-amount .col-sm-6:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 9%;
+    height: 9%;
+    width: 2px;
+    background-color: white;
+} */
+
+.widget .small-box {
+    display: flex;
+}
+
+.widget .icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.widget .widget-title {
+    font-size: 11px;
+    margin-bottom: 7%;
+    font-weight: bold;
+    /* font-weight: 800; */
+}
+
+.widget .widget-amount {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.widget #widget_1 {
+    background-color: #001E33 !important;
+}
+
+.widget .inner {
+
+    /* padding: 14px 8px; */
+    padding-top: 14px;
+    /* padding-left: 3px;
+    padding-right: 0px;
+    padding-bottom: 10px; */
+}
+
+#widget_1 .inner {
+    color: white;
+}
+
+.widget .icon {
+    padding: 10px 0px;
+    border-radius: 12px;
+    margin-top: 14px;
+    margin-left: auto;
+    border: 2px solid transparent;
+    font-size: larger;
+}
+
+#widget_1 .icon {
+    background: white;
+    color: #355485;
+}
+
+#widget_2 .icon {
+    background: #355485;
+    color: white;
+}
+
+#widget_3 .icon {
+    background: #4A8535;
+    color: white;
+}
+
+#widget_4 .icon {
+    background: #355485;
+    color: white;
+}
+
+#widget_5 .icon {
+    background: white;
+}
+
+#widget_6 .icon {
+    background: white;
+}
+
+.widget #widget_2 {
+    background-color: #9DFF9B !important;
+}
+
+.widget #widget_3 {
+    background-color: #FF9B9B !important;
+}
+
+.widget #widget_4 {
+    background-color: #D1F108 !important;
+}
+
+.widget #widget_5 {
+    background-color: #9BB7FF !important;
+}
+
+.widget #widget_6 {
+    background-color: #B3B3B3 !important;
+}
+
+.widget #widget_6 .widget-amount {
+    color: white;
+}
+
+.widget #widget_2 .widget-amount,
+.widget #widget_3 .widget-amount,
+.widget #widget_5 .widget-amount {
+    color: #2D3748;
+}
+
+.widget #widget_4 .widget-amount {
+    color: #355485;
+}
+
+.logo {
+    position: absolute;
+    right: 20px;
+    display: grid;
+    padding: 20px 0px;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.logo .academy {
+    font-size: 28px;
+    letter-spacing: 32px;
+    padding-left: 35px;
+}
+
+.logo .landlord {
+    font-weight: bolder;
+    font-size: 42px;
+}
+
+/* 27 dec */
+.widget {
+    margin-top: -2%;
+    margin-bottom: -3%;
+    width: fit-content;
+}
+
+.input-group>.form-select {
+    width: 65%;
+    background: #001E33;
+    border-radius: 34px !important;
+    color: #fff;
+    width: 124px;
+    height: 23px;
+    font-size: 12px;
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-bottom: 2px;
+    appearance: auto;
+}
+
+/* .input-group>.form-select option:checked {
+    background-color: #fff; 
+    color: #001E33; 
+} */
+
+
+/* ------------------Tejaswini ------------- */
+/* ---------------------pooja ------------------------- */
+#main-title {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 117.02px;
+    color: #000000;
+    text-align: center;
+}
+
+.line {
+    background: #ffffff;
+    height: 4px;
+    width: 100%;
+    margin: auto;
+}
+
+.line1 {
+    background: #ffffff;
+    height: 1px;
+    /* width: 32%; */
+    margin-top: -8px;
+
+}
+
+.line2 {
+    background: #ffffff;
+    height: 2px;
+    width: 100%;
+    margin: auto;
+}
+
+.property-form {
+    width: 40%;
+    float: right;
+    border-radius: 34px;
+    text-align: end;
+
+}
+
+.property-label {
+    display: inline-block;
+    width: 50%;
+}
+
+.form-group {
+    height: 32px;
+}
+
+.form-container {
+    padding: 36px 4px;
+
+}
+
+.row-flex {
+    display: flex;
+
+}
+
+.discount-text {
+    margin-left: 10%;
+    color: #00FF38;
+}
+
+#overpriced-percent {
+    color: #F94144;
+}
+
+.underline {
+    width: fit-content;
+}
+
+.cash-required {
+    background-color: #F94144;
+    border-radius: 30px;
+    font-weight: 700;
+    padding: 15px;
+    font-family: 'Montserrat';
+}
+
+/* column-3,card-2 */
+.container {
+    background: #355485;
+    border-radius: 15px;
+    margin: 3px;
+}
+
+.container h6 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid white;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.profit-analysis .card {
+    background: #408535;
+
+}
+
+.profit-analysis .total-expenses-amount {
+    background: #ffffff;
+    color: #408535;
+    text-align: center;
+    padding: 32px;
+    font-weight: bold;
+    border-radius: 40px;
+    font-size: 20px;
+}
+
+.profit-analysis .total-expenses-amount .col-sm-6 span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.profit-analysis .card-body h5 {
+    font-weight: bold;
+}
+
+/*.profit-analysis .total-expenses-amount .col-sm-6:not(:last-child)::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    top: 24%;*/
+/*    height: 8%;*/
+/*    width: 2px;*/
+/*    background-color: #408535;*/
+/*}*/
+
+/* column-3,card-2 */
+/* ---------------------pooja ------------------------- */
+.property-income .card {
+    background-color: #355485;
+    color: white;
+    padding: 14px 14px;
+}
+
+.property-income .card-header {
+    border-bottom: 3px solid white;
+    text-align: center;
+}
+
+.property-income .card-body h6 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid white;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.annual-property-expense input {
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+    float: right;
+    width: 142px;
+    text-align: end;
+    padding-right: 15px;
+}
+
+.monthly_rent {
+    float: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: right;
+
+}
+
+.property-income .card-title {
+    font-weight: bold;
+}
+
+.annual_rent_main {
+    background-color: #F94144;
+    border-radius: 30px;
+}
+
+.annual_rent {
+    float: right;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.float-left {
+    float: left;
+    font-weight: bold;
+}
+
+label {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+h6 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.card-title {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+}
+
+.infoContainer {
+    margin-top: 20px;
+}
+
+#discount-price {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+/* ------------------- tejaswini ---------------- */
+.card-subtitle {
+    text-align: center;
+    margin: 18px 0px;
+}
+
+.property-improvements {
+    float: right;
+    padding-right: 8px;
+}
+
+.property-expenses .total-expenses-amount .as-purchased {
+    border-bottom: none;
+    text-align: center;
+    width: unset;
+    margin-top: -1rem;
+}
+
+.arrow-down {
+    border: solid #355485;
+    border-radius: 8px;
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin: -15px 180px;
+    width: 47px;
+    height: 47px;
+}
+
+.arrow-container {
+    margin: 30px 0px;
+}
+
+.property-income .annual-property-expense {
+    margin-top: 5%;
+}
+
+.refined-loan-calculator {
+    margin-top: 8% !important;
+}
+
+.refined-loan-calculator .refinanced-total-expenses-amount {
+    background-color: #408535;
+    text-align: center;
+    padding: 32px;
+    font-weight: bold;
+    border-radius: 40px;
+    margin-top: 3%;
+}
+
+.property-income .refinanced-total-expenses-amount .as-purchased {
+    border-bottom: none;
+    text-align: center;
+    width: unset;
+    margin-top: 1rem;
+}
+
+.annual-property-income {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, #333932, #408535);
+    color: #FCFCFC;
+    padding: 14px 30px;
+    border-radius: 15px;
+    margin-top: 19px;
+
+}
+
+.card-1,
+.card-2 {
+    width: 50%;
+    padding: 30px;
+}
+
+.uplift-calculator .card {
+    background: #408535;
+    color: #FCFCFC;
+    padding: 14px 14px;
+}
+
+.annual-property-income .card-header,
+.uplift-calculator .card-header {
+    text-align: center;
+    border-bottom: 3px solid white;
+}
+
+.annual-property-income .card-body>h6 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+
+.annual-property-income .cash-required,
+.uplift-calculator .cash-required {
+    background-color: #FCFCFC;
+    color: #5B7956;
+}
+
+#refinanced_loan {
+    width: 80px;
+    float: none;
+    margin-left: 6px;
+}
+
+#uplift_lvr {
+    margin-top: 6px;
+}
+
+.triangle {
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid #FCFCFC;
+    z-index: 1;
+    margin-top: 18%;
+}
+
+.label {
+    padding: 40px 28px;
+}
+
+#myChart {
+    width: 1301px;
+    height: 172px;
+    display: block;
+    box-sizing: border-box;
+
+}
+
+#equityGrowthChart {
+    width: 1301px;
+    height: 172px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.red {
+    background: #F94144;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+
+}
+
+.yellow {
+    background: #F8961E;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.green {
+    background: #43AA8B;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.chartLabel {
+    padding: 0px 50px 0px 20px;
+    color: #ffffff;
+}
+
+
+/* ----------------pooja-------------- */
+.column-profitAnalysis {
+    /* flex: 2; */
+    /* padding: 10px;  */
+
+}
+
+.row-profitAnalysis {
+    width: 856px;
+    background: linear-gradient(90deg, #333932 0%, #408535 101.05%);
+    color: #fff;
+    border-radius: 15px;
+}
+
+.header {
+    width: 90%;
+    margin: 20px auto;
+    border-bottom: 4px solid;
+}
+
+.column-upliftCalculator {
+    flex: 1;
+    padding: 10px;
+}
+
+.col-padding {
+    padding: 15px 50px;
+}
+
+#border-green {
+    border-right: 2px solid #408535;
+}
+
+.purchased_monthly_rent {
+    float: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+/* --------pooja AirBnB----- */
+.str-setupCost {
+    float: right;
+    padding-right: 8px;
+}
+
+.annual-property-rental input {
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+    float: right;
+    width: 142px;
+    padding-right: 15px;
+}
+
+.profit-analysis>.card {
+    margin: 0;
+    border-radius: 15px;
+
+}
+
+.profit-analysis .card {
+    background-color: #408535;
+    color: white;
+    padding: 14px 14px;
+}
+
+.profit-analysis {
+    background: #408535;
+    color: white;
+    padding: 14px 50px;
+    border-radius: 15px;
+
+}
+
+.border-white {
+    border-right: 2px solid #fff;
+}
+
+.float-right {
+    float: right;
+}
+
+#management_fees {
+    margin-left: 50px;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon>i {
+    position: absolute;
+    display: block;
+    font-size: 16px;
+    transform: translate(0, -54%);
+    top: 50%;
+    pointer-events: none;
+    width: 25px;
+    text-align: center;
+    font-style: normal;
+}
+
+.input-icon>input {
+    padding-left: 25px;
+    padding-right: 0;
+}
+
+.input-icon-right>i {
+    right: 0;
+    color: grey;
+}
+
+.input-icon-right>input {
+    padding-left: 0;
+    padding-right: 25px;
+    text-align: right;
+}
+
