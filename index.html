@@ -11,7 +11,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+        </script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -84,7 +84,8 @@
                 </div>
                 <div>
                     <div class="bars_Background" id="nav_Bars">
-                        <i class="fa-solid fa-bars"></i> </div>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,29 +111,30 @@
                             <label for="formGroupExampleInput"
                                 class="form-label property_Parameter_Lable">STREET</label>
                             <div class="input-group column mb-2">
-                                <input type="text" id="street_name" class="form-control property_Details_Form_Field"  placeholder="Street Address"
-                                    required>
+                                <input type="text" id="street_name" class="form-control property_Details_Form_Field"
+                                    placeholder="Street Address" required>
                             </div>
                         </div>
                         <div class="col-12 col-md-3">
                             <label for="formGroupExampleInput"
                                 class="form-label property_Parameter_Lable ">SUBURB</label>
                             <div class="input-group column mb-2">
-                                <input type="text" id="subrub_name" class="form-control property_Details_Form_Field" placeholder="Suburb Name"
-                                    required>
+                                <input type="text" id="subrub_name" class="form-control property_Details_Form_Field"
+                                    placeholder="Suburb Name" required>
                             </div>
                         </div>
                         <div class="col-12 col-md-3">
                             <label for="formGroupExampleInput" class="form-label property_Parameter_Lable">City</label>
                             <div class="input-group column mb-2">
-                                <input type="text" id="city_name" class="form-control property_Details_Form_Field" placeholder="City Name" required>
+                                <input type="text" id="city_name" class="form-control property_Details_Form_Field"
+                                    placeholder="City Name" required>
                             </div>
                         </div>
                         <div class="col-12 col-md-3">
                             <label for="formGroupExampleInput" class="form-label property_Parameter_Lable">STATE</label>
                             <div class="column mb-2">
                                 <select id="state_name" class="property_Details_Form_Field" custom_select>
-                                    <option value="">State</option>
+                                    <option value="" disabled selected hidden style="color: black;">State</option>
                                     <option value="NSW">NSW</option>
                                     <option value="VIC">VIC</option>
                                     <option value="QLD">QLD</option>
@@ -277,7 +279,7 @@
                 <!-- property section -->
                 <div class="wrap">
                     <div class="row">
-                        <div class="col-12 col-sm-12 col-xl-4 col-lg-6 col-md-6 p-2">
+                        <div class="col-12 col-sm-12  col-lg-6 col-md-12 p-2 col-xxl-4">
                             <div class="property_box">
                                 <h2 class="card-title">PROPERTY</h2>
                                 <div class="property_price">
@@ -287,13 +289,13 @@
                                             <div class="property_input">
                                                 <label for="market-value" class="purchase_label">Market Value</label>
                                                 <input type="text" class="property_inner_input amountInput"
-                                                    name="market-value" id="market-value" placeholder="">
+                                                    name="market-value" id="market-value">
                                             </div>
                                             <div class="property_input">
                                                 <label for="purchase-price" class="purchase_label">Purchase
                                                     Price</label>
                                                 <input type="text" class="property_inner_input amountInput"
-                                                    name="purchase-price" id="purchase-price" placeholder="" />
+                                                    name="purchase-price" id="purchase-price" />
                                             </div>
                                         </div>
                                     </div>
@@ -301,12 +303,12 @@
                                         <div class="row discount">
                                             <div class="col-md-12">
                                                 <div class="d-flex">
-                                                    <div class="col-md-6 discount_text d_text"> Discount by</div>
-                                                    <div class="discount_text center green discount-text"
-                                                        id="discount-percent">
-                                                        17%</div>
-
-                                                    <div class="col-md-4 discount_text end d_text" id="discount-price">
+                                                    <div class="col-md-6 d_text"> Discount by <span
+                                                            id="discount-percent"
+                                                            class="center green discount-text">0%</span>
+                                                    </div>
+                                                    <div class="col-md-6 end d_text" style="padding-right: 10px;"
+                                                        id="discount-price">
                                                         $10,000
                                                     </div>
                                                 </div>
@@ -315,11 +317,12 @@
                                         <div class="row overprice">
                                             <div class="col-md-12">
                                                 <div class="d-flex">
-                                                    <div class="col-md-6 discount_text d_text"> Overpriced by </div>
-                                                    <div class="discount_text  center red discount-text"
-                                                        id="overpriced-percent">17%</div>
-                                                    <div class="col-md-4 discount_text end d_text"
-                                                        id="overpriced-price">
+                                                    <div class="col-md-6 d_text"> Overpriced by
+
+                                                        <span class="center red discount-text"
+                                                            id="overpriced-percent">0%</span>
+                                                    </div>
+                                                    <div class="col-md-6  end d_text" style="padding-right: 10px;" id="overpriced-price">
                                                         $10,000
                                                     </div>
                                                 </div>
@@ -336,38 +339,38 @@
                                             <label for="down-payment" class="purchase_label">Down
                                                 Payment</label>
                                             <input type="text" class="property_inner_input amountInput"
-                                                name="down-payment" id="down-payment" placeholder="">
+                                                name="down-payment" id="down-payment">
                                         </div>
                                         <div class="property_input">
                                             <label for="property-improvements" class="purchase_label">Property
                                                 Improvements</label>
                                             <input type="text" class="property_inner_input amountInput"
-                                                name="property-improvements" id="property-improvements" placeholder="">
+                                                name="property-improvements" id="property-improvements">
                                         </div>
                                         <div class="property_input">
                                             <label for="formGroupExampleInput" class="purchase_label"
                                                 for="legals">Legals
                                                 (lawyer/conveyancers)</label>
                                             <input type="text" class="property_inner_input amountInput" name="legals"
-                                                id="legals" placeholder="">
+                                                id="legals">
                                         </div>
                                         <div class="property_input">
                                             <label for="stamp-duty-calculator" class="purchase_label">Stamp Duty
                                                 Calculator</label>
                                             <input type="text" class="property_inner_input amountInput"
-                                                name="stamp-duty-calculator" id="stamp-duty-calculator" placeholder="">
+                                                name="stamp-duty-calculator" id="stamp-duty-calculator">
                                         </div>
                                         <div class="property_input">
                                             <label for="buyer-agent-fees" class="purchase_label">Buyer's Agent
                                                 Fees</label>
                                             <input type="text" class="property_inner_input amountInput"
-                                                name="buyer-agent-fees" id="buyer-agent-fees" placeholder="">
+                                                name="buyer-agent-fees" id="buyer-agent-fees">
                                         </div>
                                         <div class="property_input">
                                             <label for="other-costs" class="purchase_label">Other
                                                 Costs</label>
                                             <input type="text" class="property_inner_input amountInput"
-                                                name="other-costs" id="other-costs" placeholder="">
+                                                name="other-costs" id="other-costs">
                                         </div>
                                         <div class="property_input">
                                             <label for="str-setupCost" class="purchase_label">STR Set Up
@@ -389,14 +392,13 @@
                                                 Establishment
                                                 Fee</label>
                                             <input type="text" class="property_inner_input"
-                                                name="loan-establishment-fee" id="loan-establishment-fee"
-                                                placeholder="">
+                                                name="loan-establishment-fee" id="loan-establishment-fee">
                                         </div>
                                         <div class="property_input">
                                             <label for="property-valuation" class="purchase_label">Property
                                                 Valuation</label>
                                             <input type="text" class="property_inner_input" name="property-valuation"
-                                                id="property-valuation" placeholder="">
+                                                id="property-valuation">
                                         </div>
                                         <div class="property_input">
                                             <label for="lender-mortgage-insurance" class="purchase_label">LMI
@@ -404,14 +406,13 @@
                                                 Mortgage
                                                 Insurance)</label>
                                             <input type="text" class="property_inner_input"
-                                                name="lender-mortgage-insurance" id="lender-mortgage-insurance"
-                                                placeholder="">
+                                                name="lender-mortgage-insurance" id="lender-mortgage-insurance">
                                         </div>
                                         <div class="property_input">
                                             <label for="other-loan-costs" class="purchase_label">Other Loan
                                                 Costs</label>
                                             <input type="text" class="property_inner_input" name="other-loan-costs"
-                                                id="other-loan-costs" placeholder="">
+                                                id="other-loan-costs">
                                         </div>
                                     </div>
                                     <div class="total_loan">
@@ -427,7 +428,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-xl-4 col-lg-6 col-md-6 p-2">
+                        <div class="col-12 col-sm-12  col-lg-6 col-md-12 p-2 col-xxl-4">
                             <div class="property_box">
                                 <h2>Annual Property Expenses</h2>
                                 <div class="property_price">
@@ -435,87 +436,89 @@
                                     <div class="purchase_value">
                                         <div class="property_input">
                                             <label for="rates" class="purchase_label">Rates</label>
-                                            <input type="text" class="property_inner_input amountInput" id="rate_amount"
-                                                placeholder="">
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="rate_amount">
                                         </div>
                                         <div class="property_input">
                                             <label for="building_insurance" class="purchase_label">Building
                                                 Insurance</label>
                                             <input type="text" class="property_inner_input amountInput"
-                                                id="building_insurance_amount" placeholder="">
+                                                id="building_insurance_amount">
                                         </div>
                                         <div class="property_input">
                                             <label for="landlord_insurance" class="purchase_label">Landlord's
                                                 Insurance</label>
                                             <input type="text" class="property_inner_input amountInput"
-                                                id="landlord_insurance_amount" placeholder="">
+                                                id="landlord_insurance_amount">
                                         </div>
                                         <div class="property_input">
                                             <label for="formGroupExampleInput" class="purchase_label">Body
                                                 Corp/Strata
                                                 Fees</label>
                                             <input type="text" class="property_inner_input amountInput"
-                                                id="strata_fees_amount" placeholder="">
+                                                id="strata_fees_amount">
                                         </div>
                                         <div class="property_input">
                                             <label for="land_tax" class="purchase_label">Land
                                                 Tax</label>
                                             <input type="text" class="property_inner_input amountInput"
-                                                id="land_tax_amount" placeholder="">
+                                                id="land_tax_amount">
                                         </div>
                                         <div class="property_input">
                                             <label for="formGroupExampleInput"
                                                 class="purchase_label">Maintenance</label>
                                             <input type="text" class="property_inner_input amountInput"
-                                                id="maintenance_amount" placeholder="">
+                                                id="maintenance_amount">
                                         </div>
                                         <div class="property_input">
-                                            <div>
+                                            <div style="flex: 1;">
                                                 <label for="management_fees" class="purchase_label">Property Management
                                                     Fees</label>
                                             </div>
                                             <div class="input-icon input-icon-right"
-                                                style="display: flex; gap: 6px; align-items: center;">
-                                                <input type="text" id="management_fees_amount" class="form-control property_inner_input amountPercentage"
-                                                    placeholder="" style="width: 100px;" />
+                                                style="display: flex; gap: 6px; align-items: center; flex: 1; justify-content: space-between;">
+                                                <div class="percentage_Wrapper">
+                                                    <input type="text" id="management_fees_amount"
+                                                        class="form-control property_inner_input amountPercentage"
+                                                        placeholder="0"
+                                                        style="width: 130px;margin-left: 10px;padding-right: 20px;" />
+                                                    <label for="management_fees_amount"
+                                                        class="percentage_Symbole">%</span>
+                                                </div>
 
-                                                <span id="management_fees"></span>
+                                                <span id="management_fees" style="margin-right: 12px;"></span>
                                             </div>
                                         </div>
                                         <div class="property_input">
                                             <label for="rates" class="purchase_label">Water</label>
-                                            <input type="text" class="property_inner_input amountInput" id="water"
-                                                placeholder="">
+                                            <input type="text" class="property_inner_input amountInput" id="water">
                                         </div>
                                         <div class="property_input">
                                             <label for="building_insurance" class="purchase_label">Electricity</label>
-                                            <input type="text" class="property_inner_input amountInput" id="electricity"
-                                                placeholder="">
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="electricity">
                                         </div>
                                         <div class="property_input">
                                             <label for="landlord_insurance" class="purchase_label">Internet</label>
-                                            <input type="text" class="property_inner_input amountInput" id="internet"
-                                                placeholder="">
+                                            <input type="text" class="property_inner_input amountInput" id="internet">
                                         </div>
                                         <div class="property_input">
                                             <label for="strata_fees" class="purchase_label">Booking Software</label>
                                             <input type="text" class="property_inner_input amountInput"
-                                                id="booking-software" placeholder="">
+                                                id="booking-software">
                                         </div>
                                         <div class="property_input">
                                             <label for="land_tax" class="purchase_label">Consumables</label>
-                                            <input type="text" class="property_inner_input amountInput" id="consumables"
-                                                placeholder="">
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="consumables">
                                         </div>
                                         <div class="property_input">
                                             <label for="land_tax" class="maintenance">Gifts</label>
-                                            <input type="text" class="property_inner_input amountInput" id="gifts"
-                                                placeholder="">
+                                            <input type="text" class="property_inner_input amountInput" id="gifts">
                                         </div>
                                         <div class="property_input">
                                             <label for="maintenance" class="purchase_label">Others</label>
-                                            <input type="text" class="property_inner_input amountInput" id="others"
-                                                placeholder="">
+                                            <input type="text" class="property_inner_input amountInput" id="others">
                                         </div>
                                     </div>
                                     <div id="cash-required" class="total_cash">
@@ -530,8 +533,13 @@
                                             <label for="formGroupExampleInput"
                                                 class="purchase_label interest_rate">Interest
                                                 Rate</label>
-                                            <input type="text" id="interest_rate" class="property_inner_input amountPercentage"
-                                                placeholder="">
+                                            <div class="percentage_Wrapper">
+                                                <input type="text" id="interest_rate" placeholder="0"
+                                                    class="property_inner_input amountPercentage">
+                                                <label for="interest_rate" class="percentage_Symbole">
+                                                    %
+                                                </label>
+                                            </div>
                                         </div>
                                         <div class="total_loan">
                                             <p class="annual_text fund-borrowed">Total Funds Borrowed</p>
@@ -580,7 +588,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-xl-4 col-lg-6 col-md-6 p-2">
+                        <div class="col-12 col-sm-12  col-lg-6 col-md-12 p-2 col-xxl-4">
                             <div class="property_box">
                                 <h2>TENANTS</h2>
                                 <div class="property_price">
@@ -588,23 +596,23 @@
                                     <div class="property_input form-group">
                                         <label for="internal_painting" class="purchase_label ">Furniture</label>
                                         <input type="text" class="property_inner_input amountInput amountInput"
-                                            id="furniture" placeholder="" />
+                                            id="furniture" />
                                     </div>
                                     <div class="property_input form-group">
                                         <label for="internal_painting" class="purchase_label ">Photgraph/Listing
                                             Cost</label>
                                         <input type="text" class="property_inner_input amountInput amountInput"
-                                            id="photograph-Listing-Cost" placeholder="" />
+                                            id="photograph-Listing-Cost" />
                                     </div>
                                     <div class="property_input form-group">
                                         <label for="internal_painting" class="purchase_label ">Security</label>
                                         <input type="text" class="property_inner_input amountInput amountInput"
-                                            id="security" placeholder="" />
+                                            id="security" />
                                     </div>
                                     <div class="property_input form-group">
                                         <label for="internal_painting" class="purchase_label ">Other</label>
                                         <input type="text" class="property_inner_input amountInput amountInput"
-                                            id="other-str-cost" placeholder="" />
+                                            id="other-str-cost" />
                                     </div>
                                     <div class="rental_income">
                                         <h5>TOTAL SET UP COST</h5>
@@ -619,18 +627,19 @@
                                     <div class="down_payment annual-property-expense">
                                         <div class="property_input">
                                             <label for="daily-rate" class="purchase_label "> Daily Rate</label>
-                                            <input type="text" class="property_inner_input amountInput" id="daily-rate"
-                                                placeholder="">
+                                            <input type="text" class="property_inner_input amountInput" id="daily-rate">
                                         </div>
-                                        <div class="form-group" style="display:flex; gap: 8px; align-items: center;">
-                                            <div class="input-icon input-icon-right">
-                                                <input type="text" id="occupancy" placeholder=""
-                                                    style="width: 80px; padding-right: 20px;"
-                                                    class="property_inner_input amountPercentage" />
-                                                                                           </div>
-                                            <label for="occupancy" style="margin-top: 2px">
+                                        <div class="form-group"
+                                            style="display:flex; gap: 8px; align-items: center;justify-content: space-between;">
+                                            <label for="occupancy" class="purchase_label" style="margin-top: 2px">
                                                 Occupancy
                                             </label>
+                                            <div class="input-icon input-icon-right percentage_Wrapper">
+                                                <input type="text" id="occupancy"
+                                                    style="width: 100px; padding-right: 20px;"
+                                                    class="property_inner_input amountPercentage" />
+                                                <label for="occupancy" class="percentage_Symbole">%</span>
+                                            </div>
                                         </div>
                                         <div class="rental_income">
                                             <h5>GROSS ANNUAL RENT</h5>
@@ -686,7 +695,367 @@
                 </div>
             </div>
             <div id="airbnb_Rental_Model" class="calculator_Models">
-                Write code for rent here
+                <div class="buy_input_box">
+                    <div class="row gy-1">
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput"
+                                class="form-label property_Parameter_Lable">STREET</label>
+                            <div class="input-group column mb-2">
+                                <input type="text" id="street_name" class="form-control property_Details_Form_Field"
+                                    placeholder="Street Address" required>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput"
+                                class="form-label property_Parameter_Lable ">SUBURB</label>
+                            <div class="input-group column mb-2">
+                                <input type="text" id="subrub_name" class="form-control property_Details_Form_Field"
+                                    placeholder="Suburb Name" required>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput" class="form-label property_Parameter_Lable">City</label>
+                            <div class="input-group column mb-2">
+                                <input type="text" id="city_name" class="form-control property_Details_Form_Field"
+                                    placeholder="City Name" required>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput" class="form-label property_Parameter_Lable">STATE</label>
+                            <div class="column mb-2">
+                                <select id="state_name" class="property_Details_Form_Field" custom_select>
+                                    <option value="">State</option>
+                                    <option value="NSW">NSW</option>
+                                    <option value="VIC">VIC</option>
+                                    <option value="QLD">QLD</option>
+                                    <option value="WA">WA</option>
+                                    <option value="SA">SA</option>
+                                    <option value="TAS">TAS</option>
+                                    <option value="ACT">ACT</option>
+                                    <option value="NT">NT</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput" class="form-label property_Parameter_Lable">TYPE</label>
+                            <div class="input-group column">
+                                <select id="type" class="property_Details_Form_Field" custom_select>
+                                    <option value="Unit">Unit</option>
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="Villa">Villa</option>
+                                    <option value="Duplex">Duplex</option>
+                                    <option value="Townhouse">Townhouse</option>
+                                    <option value="House">House</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput"
+                                class="form-label property_Parameter_Lable">BEDROOMS</label>
+                            <div class="input-group column">
+                                <select id="bedrooms" class="property_Details_Form_Field" custom_select>
+                                    <option value="1 Bedrooms">1 Bedroom</option>
+                                    <option value="2 Bedrooms">2 Bedrooms</option>
+                                    <option value="3 Bedrooms">3 Bedrooms</option>
+                                    <option value="4 Bedrooms">4 Bedrooms</option>
+                                    <option value="5+ Bedrooms">5+ Bedrooms</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput"
+                                class="form-label property_Parameter_Lable">BATHROOM</label>
+                            <div class="input-group column">
+                                <select id="bathrooms" class="property_Details_Form_Field" custom_select>
+                                    <option value="1 Bathroom">1 Bathroom</option>
+                                    <option value="2 Bathroom">2 Bathrooms</option>
+                                    <option value="3 Bathroom">3 Bathrooms</option>
+                                    <option value="4 Bathroom">4+ Bathrooms</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="formGroupExampleInput"
+                                class="form-label property_Parameter_Lable">PARKING</label>
+                            <div class="input-group column">
+                                <select id="parking" class="property_Details_Form_Field" custom_select>
+                                    <option value="No Parking">No Parking</option>
+                                    <option value="Single Car Space">Single Car Space</option>
+                                    <option value="Double Car Space">Double Car Space</option>
+                                    <option value="Single Garage">Single Garage</option>
+                                    <option value="Double Garage">Double Garage</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cash_box container-fluid">
+                    <div class="row justify-content-center g-3">
+                        <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_1">
+                            <div class="kafelki_item">
+                                <div class="kafelki_number_container">
+                                    <img src="asserts/images/wallet.svg" alt="">
+                                </div>
+                                <p class="kafelki_text">ANNUAL RENTAL</p>
+                                <p class="kafelki_name" id="rental-widget-purchase-price">$0</p>
+                            </div>
+                            <!-- <div class="icon">
+                                    <i class="fa-solid fa-wallet"></i>
+                                </div> -->
+                        </div>
+                        <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_2">
+                            <div class="kafelki_item">
+                                <div class="kafelki_number_container">
+                                    <img src="asserts/images/cash.svg" alt="">
+                                </div>
+                                <p class="kafelki_text">STR SET UP COST</p>
+                                <p class="kafelki_name" id="rental-widget-cash-required">$0</p>
+                            </div>
+                            <!-- <div class="icon">
+                                    <i class="fa-solid fa-sack-dollar"></i>
+                                </div> -->
+                        </div>
+                        <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_3">
+                            <div class="kafelki_item">
+                                <div class="kafelki_number_container">
+                                    <img src="asserts/images/page.svg" alt="">
+                                </div>
+                                <p class="kafelki_text">ANNUAL EXPENSES</p>
+                                <p class="kafelki_name" id="rental-widget-value-add">$0</p>
+                            </div>
+                            <!-- <div class="icon">
+                                    <i class="fa-solid fa-receipt"></i>
+                                </div> -->
+                        </div>
+                        <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_4">
+                            <div class="kafelki_item">
+                                <div class="kafelki_number_container">
+                                    <img src="asserts/images/bank.svg" alt="">
+                                </div>
+                                <p class="kafelki_text">DAILY RATE</p>
+                                <p class="kafelki_name" id="rental-widget-equity-io">$0</p>
+                            </div>
+                            <!-- <div class="icon">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                </div> -->
+                        </div>
+                        <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_5">
+                            <div class="kafelki_item">
+                                <div class="kafelki_number_container">
+                                    <img src="asserts/images/page.svg" alt="">
+                                </div>
+                                <p class="kafelki_text">Net Profit</p>
+                                <p class="kafelki_name" id="rental-widget-renovation-cost">$0</p>
+                            </div>
+                            <!-- <div class="icon">
+                                    <i class="fa-solid fa-piggy-bank"></i>
+                                </div> -->
+                        </div>
+                        <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_6">
+                            <div class="kafelki_item">
+                                <div class="kafelki_number_container">
+                                    <img src="asserts/images/cash2.svg" alt="">
+                                </div>
+                                <p class="kafelki_text">OCCUPANCY</p>
+                                <p class="kafelki_name" id="rental-widget-occupancy">0%</p>
+                            </div>
+                            <!-- <div class="icon">
+                                    <i class="fa-solid fa-money-bills"></i>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-xl-4 col-lg-6 col-md-6 p-2">
+                            <div class="property_box">
+                                <h2 class="card-title">PROPERTY</h2>
+                                <div class="property_price">
+                                    <div class="purchase_title">
+                                        <div class="purchase_value">
+                                            <div class="property_input">
+                                                <label for="market-value" class="purchase_label">Weekly Rent</label>
+                                                <input type="text" class="property_inner_input amountInput"
+                                                    name="week-rent" id="week-rent">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="weeklyRent" class="total_cash">
+                                        <h3>Annual Rent</h3>
+                                        <h3 id="week-weekly-rent">$0</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-xl-4 col-lg-6 col-md-6 p-2">
+                            <div class="property_box">
+                                <h2>Annual Property Expenses</h2>
+                                <div class="property_price">
+                                    <h3 class="purchase_title">PROPERTY EXPENSES</h3>
+                                    <div class="purchase_value">
+                                        <div class="property_input">
+                                            <label for="rates" class="purchase_label">Rates</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="rate_amount">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="insurance" class="purchase_label">
+                                                Insurance</label>
+                                            <input type="text" class="property_inner_input amountInput" id="insurance">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="rental-maintenance_amount"
+                                                class="purchase_label">Maintenance</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="rental-maintenance_amount">
+                                        </div>
+                                        <div class="property_input">
+                                            <div style="flex: 1;">
+                                                <label for="management_fees" class="purchase_label">Property Management
+                                                    Fees</label>
+                                            </div>
+                                            <div class="input-icon input-icon-right"
+                                                style="display: flex; gap: 6px; align-items: center; flex: 1; justify-content: space-between;">
+                                                <div class="percentage_Wrapper">
+                                                    <input type="text" id="rental-management_fees_amount"
+                                                        class="form-control property_inner_input amountPercentage"
+                                                        placeholder="0"
+                                                        style="width: 130px;margin-left: 10px;padding-right: 20px;" />
+                                                    <label for="rental-management_fees_amount"
+                                                        class="percentage_Symbole">%</span>
+                                                </div>
+
+                                                <span id="rental_management_fees" style="margin-right: 12px;"></span>
+                                            </div>
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="rental-water" class="purchase_label">Water</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="rental-water">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="rental-electricity" class="purchase_label">Electricity</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="rental-electricity">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="rental-internet" class="purchase_label">Internet</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="rental-internet">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="rental-booking-software" class="purchase_label">Booking
+                                                Software</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="rental-booking-software">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="rental-consumables" class="purchase_label">Consumables</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="rental-consumables">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="rental-gifts" class="maintenance">Gifts</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="rental-gifts">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="rental-others" class="purchase_label">Others</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="rental-others">
+                                        </div>
+                                        <div class="property_input">
+                                            <label for="rent" class="purchase_label">Rent</label>
+                                            <input type="text" class="property_inner_input amountInput" id="rent">
+                                        </div>
+                                    </div>
+                                    <div id="cash-required" class="total_cash">
+                                        <h3>Total Annual Expenses</h3>
+                                        <h3 id="rental-total-purchasePrice"> $0</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-xl-4 col-lg-6 col-md-6 p-2">
+                            <div class="property_box">
+                                <h2>STR SET UP COSTS</h2>
+                                <div class="property_price">
+                                    <div class="property_input form-group">
+                                        <label for="rental-furniture" class="purchase_label ">Furniture</label>
+                                        <input type="text" class="property_inner_input amountInput amountInput"
+                                            id="rental-furniture" />
+                                    </div>
+                                    <div class="property_input form-group">
+                                        <label for="rental-photograph-Listing-Cost"
+                                            class="purchase_label ">Photgraph/Listing
+                                            Cost</label>
+                                        <input type="text" class="property_inner_input amountInput amountInput"
+                                            id="rental-photograph-Listing-Cost" />
+                                    </div>
+                                    <div class="property_input form-group">
+                                        <label for="rental-security" class="purchase_label ">Security</label>
+                                        <input type="text" class="property_inner_input amountInput amountInput"
+                                            id="rental-security" />
+                                    </div>
+                                    <div class="property_input form-group">
+                                        <label for="rental-other-str-cost" class="purchase_label ">Other</label>
+                                        <input type="text" class="property_inner_input amountInput amountInput"
+                                            id="rental-other-str-cost" />
+                                    </div>
+                                    <div class="rental_income">
+                                        <h5>TOTAL SET UP COST</h5>
+                                        <h5 class="annual_rent" id="rental-total_renovation_cost">$0</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property_box">
+                                <h2>Annual Property Income</h2>
+                                <div class="property_price">
+                                    <h3 class="purchase_title">RENTAL INCOME</h3>
+                                    <div class="down_payment annual-property-expense">
+                                        <div class="property_input">
+                                            <label for="rental_daily_rate" class="purchase_label "> Daily Rate</label>
+                                            <input type="text" class="property_inner_input amountInput"
+                                                id="rental_daily_rate">
+                                        </div>
+                                        <div class="form-group" style="display:flex; gap: 8px; align-items: center;">
+                                            <div class="input-icon input-icon-right percentage_Wrapper">
+                                                <input type="text" id="rental-occupancy"
+                                                    style="width: 80px; padding-right: 20px;"
+                                                    class="property_inner_input amountPercentage" />
+                                                <label for="rental-occupancy" class="percentage_Symbole">%</span>
+
+                                            </div>
+                                            <label for="occupancy" style="margin-top: 2px">
+                                                Occupancy
+                                            </label>
+                                        </div>
+                                        <div class="rental_income">
+                                            <h5>GROSS ANNUAL RENT</h5>
+                                            <h5 class="annual_rent" id="rental_purchased_annual_rent">$0</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="property_box">
+                                <h3 class="profit_title">Profit Analysis</h3>
+                                <div class="net_profit net-profit total-expenses-amount">
+                                    <h2>NET PROFIT ON
+                                        <label>
+                                            <h5 id="rental-profit-text">XX%</h5>
+                                        </label> OCCUPANCY
+                                    </h2>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h2 id="rental-net-profit">$0</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!----------------------- AirBnB (Rental Model)  ------------>
         </div>

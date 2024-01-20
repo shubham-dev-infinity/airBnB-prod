@@ -76,7 +76,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .calculator_Heading {
     flex-direction: column;
     align-items: start;

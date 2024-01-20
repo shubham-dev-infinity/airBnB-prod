@@ -108,8 +108,7 @@ section {
 .nice-select .option:hover,
 .nice-select .option.focus,
 .nice-select .option.selected.focus {
-  color: gray;
-  background: none;
+  color: #008bff;
 }
 .property_Details_Form_Field {
   border-radius: 8px;
@@ -1058,4 +1057,19 @@ a.bg-dark {
 }
 .str-setupCost{
   padding-right: 14px;
+}
+.percentage_Wrapper{
+  position: relative;
+}
+.percentage_Wrapper input{
+  padding-right: 20px;
+}
+.percentage_Wrapper label{
+  z-index: 2;
+}
+.percentage_Symbole{
+  position: absolute;
+  top: 6px;
+  right: 4px;
+  color: gray;
 }

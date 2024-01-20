@@ -88,7 +88,7 @@ $(document).ready(function () {
         var originalInputValue = $(this).val();
 
         // Format the numeric value with the '$' sign
-        var formattedValue = '%' + numericValue.toLocaleString();
+        var formattedValue = numericValue.toLocaleString();
 
         // Check if the numeric value is 0 after deleting the first digit
         if (numericValue === 0 && originalInputValue.indexOf('0') === 1) {
@@ -129,7 +129,7 @@ $(document).ready(function () {
         var marketValue = parseFloat($('#market-value').val().replace(/[^0-9.-]/g, '')) || 0;
         var purchasePrice = parseFloat($('#purchase-price').val().replace(/[^0-9.-]/g, '')) || 0;
         $('#widget-purchase-price').text('$' + purchasePrice.toLocaleString());
-        if (marketValue > purchasePrice) {
+        if (marketValue > purchasePrice && marketValue && purchasePrice) {
             var discountAmount = marketValue - purchasePrice;
             var discountPercentage = marketValue !== 0 ? (discountAmount / marketValue) * 100 : 0;
             discountPercentage = (discountPercentage * 100) / 100;
@@ -139,7 +139,7 @@ $(document).ready(function () {
             $('.discount').show();
             $('.overprice').hide();
             $('#result-message').hide();
-        } else if (marketValue < purchasePrice) {
+        } else if (marketValue < purchasePrice && marketValue && purchasePrice) {
             var overpricedAmount = purchasePrice - marketValue;
             var overpricedPercentage = marketValue !== 0 ? (overpricedAmount / marketValue) * 100 : 0;
             overpricedPercentage = (overpricedPercentage * 100) / 100;
@@ -150,10 +150,15 @@ $(document).ready(function () {
             $('.discount').hide();
             $('#result-message').hide();
         }
-        else {
+        else if(marketValue && purchasePrice) {
             // Display a message in the else part with HTML
             $('#result-message').show();
             $('#result-message').html("<p>Purchasing at Market Price</p>");
+            $('.overprice').hide();
+            $('.discount').hide();
+        }else{
+            $('#result-message').show();
+            $('#result-message').html("");
             $('.overprice').hide();
             $('.discount').hide();
         }
