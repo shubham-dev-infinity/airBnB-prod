@@ -7,7 +7,7 @@
 
 body {
   overflow-x: hidden;
-  background: #EEF2F7;
+  background: #eef2f7;
 }
 
 a,
@@ -74,10 +74,6 @@ section {
   padding: 0 30px;
 }
 
-.buy_hold {
-  /* margin: 60px 0 0 0; */
-}
-
 .buy_hold_title {
   margin: 20px 0;
   font-size: 30px;
@@ -112,16 +108,23 @@ section {
 .nice-select .option:hover,
 .nice-select .option.focus,
 .nice-select .option.selected.focus {
-  color: red;
+  color: gray;
   background: none;
 }
+.property_Details_Form_Field {
+  border-radius: 8px;
+  border: 1px solid var(--Background, #eef2f7);
+  background: var(--White, #fff);
 
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
 select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  text-overflow: '';
+  text-overflow: "";
 }
 
 .cash_box {
@@ -140,7 +143,7 @@ select {
   background: #fff;
   border-radius: 16px;
   padding: 16px 24px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .13);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
   height: inherit;
   align-self: stretch;
   height: 100%;
@@ -153,7 +156,7 @@ select {
   padding: 11px;
   width: 52px;
   height: 50.323px;
-  background: #EEF2F7;
+  background: #eef2f7;
   border-radius: 6px;
   box-shadow: 0px 3.5px 5.5px 0px rgba(0, 0, 0, 0.02);
   margin-bottom: 15px;
@@ -185,7 +188,7 @@ select {
 }
 
 .kafelki_text {
-  color: #8391A2;
+  color: #8391a2;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -208,15 +211,15 @@ select {
 
 .property_box {
   border-radius: 10px;
-  border: 0.5px solid #FFF;
-  background: #FFF;
+  border: 0.5px solid #fff;
+  background: #fff;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.02);
   padding: 20px 20px 0 20px;
   margin-bottom: 20px;
 }
 
 .property_box h2 {
-  color: #8391A2;
+  color: #8391a2;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -226,15 +229,15 @@ select {
 
 .property_price {
   border-radius: 10px;
-  border: 0.5px solid #FFF;
-  background: #EEF2F7;
+  border: 0.5px solid #fff;
+  background: #eef2f7;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.02);
   padding: 16px 10px;
   margin: 20px 0;
 }
 
 .purchase_title {
-  color: #225CCB;
+  color: #225ccb;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -244,13 +247,13 @@ select {
 
 .purchase_value {
   padding: 20px 0 10px 0;
-  border-bottom: 1px solid #DADADB;
+  border-bottom: 1px solid #dadadb;
   margin-bottom: 15px;
 }
 
 .property_input {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 10px;
@@ -284,13 +287,13 @@ input.property_inner_input {
 }
 
 .d_text {
-  color: #08183A;
+  color: #08183a;
   /* font-family: Montserrat; */
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .green {
@@ -302,7 +305,7 @@ input.property_inner_input {
 }
 
 .red {
-  color: #F0191C;
+  color: #f0191c;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -330,8 +333,8 @@ input.property_inner_input {
   margin: 20px 0;
   padding: 20px;
   border-radius: 10px;
-  border: 0.5px solid var(--White, #FFF);
-  background: var(--Secondary, #225CCB);
+  border: 0.5px solid var(--White, #fff);
+  background: var(--Secondary, #225ccb);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.02);
   display: flex;
   justify-content: space-between;
@@ -354,8 +357,8 @@ input.property_inner_input {
 .annual_btn {
   padding: 6px 14px;
   border-radius: 8px;
-  border: 1px solid #EEF2F7;
-  background: #FFF;
+  border: 1px solid #eef2f7;
+  background: #fff;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
@@ -380,14 +383,14 @@ input.property_inner_input {
 .total_expenses {
   padding: 20px;
   border-radius: 10px;
-  border: 0.5px solid #FFF;
-  background: #225CCB;
+  border: 0.5px solid #fff;
+  background: #225ccb;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.02);
   margin-bottom: 20px;
 }
 
 .total_expenses h2 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -404,7 +407,7 @@ input.property_inner_input {
 }
 
 .p_io h5 {
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -415,8 +418,8 @@ input.property_inner_input {
 .rental_income {
   padding: 20px;
   border-radius: 10px;
-  border: 0.5px solid #FFF;
-  background: #225CCB;
+  border: 0.5px solid #fff;
+  background: #225ccb;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.02);
   margin-top: 20px;
   display: flex;
@@ -424,7 +427,7 @@ input.property_inner_input {
 }
 
 .rental_income h5 {
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -453,13 +456,13 @@ input.property_inner_input {
   margin: 20px 0;
   padding: 20px;
   border-radius: 10px;
-  border: 0.5px solid #FFF;
+  border: 0.5px solid #fff;
   background: #167807;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.02);
 }
 
 .net_profit h2 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -472,15 +475,6 @@ input.property_inner_input {
 .annual_property_box {
   display: block;
 }
-
-
-
-
-
-
-
-
-
 
 .menu_toggle_btn {
   cursor: pointer;
@@ -498,7 +492,7 @@ input.property_inner_input {
   height: 3px;
   margin-bottom: 5px;
   border-radius: 30px;
-  background: #EB6A2A;
+  background: #eb6a2a;
   transition: all 0.5s ease;
 }
 
@@ -506,21 +500,15 @@ input.property_inner_input {
   margin-top: 5px;
 }
 
-
-
-
-
-
 /* #sidebarClose{
   display: none;
 } */
 button#sidebarClose {
-
   text-decoration: none;
 }
 
 i.fa-solid.fa-xmark {
-  color: #225CCB;
+  color: #225ccb;
   font-size: 37px;
   position: absolute;
   top: 0.3%;
@@ -531,6 +519,9 @@ i.fa-solid.fa-xmark {
 .logo {
   width: 100%;
   margin-bottom: 30px;
+}
+.logo img{
+  max-width: 250px;
 }
 
 button#sidebarOpen {
@@ -570,7 +561,7 @@ i.fa-brands.fa-airbnb {
   align-items: center;
   gap: 11.667px;
   border-radius: 7px;
-  background: #EEF2F7;
+  background: #eef2f7;
 }
 
 .sidbar_text {
@@ -583,23 +574,23 @@ i.fa-brands.fa-airbnb {
 }
 
 .nav-link:hover .sb-nav-link-icon {
-  border: 1px solid #225CCB;
+  border: 1px solid #225ccb;
 }
 
 .nav-link:hover i.fa-solid.fa-bag-shopping {
-  color: #225CCB;
+  color: #225ccb;
 }
 
 .nav-link:hover i.fa-brands.fa-airbnb {
-  color: #225CCB;
+  color: #225ccb;
 }
 
 .nav-link:hover i.fa-solid.fa-building {
-  color: #225CCB;
+  color: #225ccb;
 }
 
 .nav-link:hover .sidbar_text {
-  color: #225CCB;
+  color: #225ccb;
 }
 
 #layoutAuthentication {
@@ -781,7 +772,7 @@ i.fa-brands.fa-airbnb {
 
 .nav-link {
   padding: 0px;
-  border-bottom: 1px solid var(--Background, #EEF2F7);
+  border-bottom: 1px solid var(--Background, #eef2f7);
 }
 
 .sb-sidenav .sb-sidenav-menu .nav .nav-link .sb-nav-link-icon {
@@ -794,7 +785,11 @@ i.fa-brands.fa-airbnb {
   transition: transform 0.15s ease;
 }
 
-.sb-sidenav .sb-sidenav-menu .nav .nav-link.collapsed .sb-sidenav-collapse-arrow {
+.sb-sidenav
+  .sb-sidenav-menu
+  .nav
+  .nav-link.collapsed
+  .sb-sidenav-collapse-arrow {
   transform: rotate(-90deg);
 }
 
@@ -809,8 +804,8 @@ i.fa-brands.fa-airbnb {
 }
 
 .sb-sidenav-dark {
-  background-color: #FFF;
-  padding: 58px 40px 50px 40px;
+  background-color: #fff;
+  padding: 25px;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -819,7 +814,7 @@ i.fa-brands.fa-airbnb {
 }
 
 .sb-sidenav-dark .sb-sidenav-menu .nav-link {
-  color: #08183A;
+  color: #08183a;
 }
 
 .sb-sidenav-dark .sb-sidenav-menu .nav-link .sb-nav-link-icon {
@@ -833,7 +828,6 @@ i.fa-brands.fa-airbnb {
 /* .sb-sidenav-dark .sb-sidenav-menu .nav-link:hover {
   color: #fff;
 } */
-
 
 .sb-sidenav-dark .sb-sidenav-menu .nav-link.active .sb-nav-link-icon {
   color: #fff;
@@ -900,17 +894,17 @@ i.fa-brands.fa-airbnb {
   padding: 0;
 }
 
-.datatable-top>nav:first-child,
-.datatable-top>div:first-child,
-.datatable-bottom>nav:first-child,
-.datatable-bottom>div:first-child {
+.datatable-top > nav:first-child,
+.datatable-top > div:first-child,
+.datatable-bottom > nav:first-child,
+.datatable-bottom > div:first-child {
   float: left;
 }
 
-.datatable-top>nav:last-child,
-.datatable-top>div:last-child,
-.datatable-bottom>nav:last-child,
-.datatable-bottom>div:last-child {
+.datatable-top > nav:last-child,
+.datatable-top > div:last-child,
+.datatable-bottom > nav:last-child,
+.datatable-bottom > div:last-child {
   float: right;
 }
 
@@ -1002,8 +996,8 @@ a.bg-dark {
 
 .model_Tab_Btn {
   border-radius: 10px;
-  border: 0.5px solid var(--White, #FFF);
-  background: var(--White, #FFF);
+  border: 0.5px solid var(--White, #fff);
+  background: var(--White, #fff);
   padding: 10px;
   align-items: center;
   gap: 10px;
@@ -1015,8 +1009,8 @@ a.bg-dark {
 
 .model_Tab_Btn_Active {
   color: white;
-  border: 0.5px solid var(--White, #FFF);
-  background: var(--Primary, #08183A);
+  border: 0.5px solid var(--White, #fff);
+  background: var(--Primary, #08183a);
 }
 
 .calculator_Models {
@@ -1035,8 +1029,8 @@ a.bg-dark {
   gap: 10px;
   align-self: stretch;
   border-radius: 10px;
-  border: 0.5px solid var(--Secondary, #225CCB);
-  background: var(--Background, #EEF2F7);
+  border: 0.5px solid var(--Secondary, #225ccb);
+  background: var(--Background, #eef2f7);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.02);
   width: 100%;
 }
@@ -1047,14 +1041,21 @@ a.bg-dark {
 
 .activeLink p,
 .activeLink i {
-  color: #225CCB !important;
+  color: #225ccb !important;
 }
 
 .activeLink .sb-nav-link-icon {
-  border: 1px solid #225CCB;
+  border: 1px solid #225ccb;
 }
 
 #sidebar-container,
 #layoutSidenav_nav {
   transition: width 0.5s;
+  max-width: 325px;
+}
+.amountPercentage{
+  color: gray !important;
+}
+.str-setupCost{
+  padding-right: 14px;
 }

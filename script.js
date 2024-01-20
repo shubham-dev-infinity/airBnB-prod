@@ -71,6 +71,60 @@ $(document).ready(function () {
         rental_annualRepaymentAmount();
 
     });
+    $("body").on('input', '.amountPercentage', function () {
+        var inputElement = this;
+        var originalCursorPosition = inputElement.selectionStart;
+
+        // Get the numeric value without non-numeric characters
+        var numericValue = parseFloat($(this).val().replace(/[^0-9.-]/g, ''));
+
+        // Check if the numeric value is NaN (not a number)
+        if (isNaN(numericValue)) {
+            // If NaN, set the input value to an empty string and exit the function
+            $(this).val('');
+            return;
+        }
+        // Get the input value before formatting
+        var originalInputValue = $(this).val();
+
+        // Format the numeric value with the '$' sign
+        var formattedValue = '%' + numericValue.toLocaleString();
+
+        // Check if the numeric value is 0 after deleting the first digit
+        if (numericValue === 0 && originalInputValue.indexOf('0') === 1) {
+            // Revert to the original input value and keep the cursor position
+            $(this).val(originalInputValue);
+            inputElement.setSelectionRange(originalCursorPosition, originalCursorPosition);
+            return;
+        }
+
+        // Calculate the change in length due to formatting
+        var lengthDiff = formattedValue.length - originalInputValue.length;
+
+        // Update the input value
+        $(this).val(formattedValue);
+
+        // Calculate the new cursor position
+        var newCursorPosition = originalCursorPosition + lengthDiff;
+
+        // Set the cursor position after updating the input
+        inputElement.setSelectionRange(newCursorPosition, newCursorPosition);
+
+        totalCashRequired();
+        updateDiscount();
+        strSetupCost();
+        loanEstablishedExpense();
+        calculatePMT();
+        loanExpenses();
+        calculateRentalIncome();
+        property();
+        rental_StrSetupCost();
+        rental_Income();
+        property_Expenses();
+        annualRepaymentAmount();
+        rental_annualRepaymentAmount();
+
+    });
     function updateDiscount() {
         var marketValue = parseFloat($('#market-value').val().replace(/[^0-9.-]/g, '')) || 0;
         var purchasePrice = parseFloat($('#purchase-price').val().replace(/[^0-9.-]/g, '')) || 0;
@@ -99,7 +153,7 @@ $(document).ready(function () {
         else {
             // Display a message in the else part with HTML
             $('#result-message').show();
-            $('#result-message').html("<p>Purchasing at Market Price.</p>");
+            $('#result-message').html("<p>Purchasing at Market Price</p>");
             $('.overprice').hide();
             $('.discount').hide();
         }
@@ -160,6 +214,7 @@ $(document).ready(function () {
         var strata_fees_amount = parseFloat($('#strata_fees_amount').val().replace(/[^0-9.-]/g, '')) || 0;
         var land_tax_amount = parseFloat($('#land_tax_amount').val().replace(/[^0-9.-]/g, '')) || 0;
         var maintenance_amount = parseFloat($('#maintenance_amount').val().replace(/[^0-9.-]/g, '')) || 0;
+        
         var management_fees_rate = parseFloat($('#management_fees_amount').val().replace(/[^0-9.-]/g, '')) || 0;
         var amount = grossAnnualRent * management_fees_rate * 0.01;
         if (isNaN(amount)) {

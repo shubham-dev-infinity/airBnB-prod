@@ -18,9 +18,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
 
-    <link rel="stylesheet" href="Assert/Css/style.css">
-    <link rel="stylesheet" href="Assert/Css/nice-select.css">
-    <link rel="stylesheet" href="Assert/Css/responsive.css">
+    <link rel="stylesheet" href="asserts/css/style.css">
+    <link rel="stylesheet" href="asserts/css/nice-select.css">
+    <link rel="stylesheet" href="asserts/css/responsive.css">
 
 </head>
 
@@ -34,8 +34,8 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="logo">
-                                <img src="Assert/images/THE LANDLORD.png" alt="">
-                                <img src="Assert/images/ACADEMY.png" alt="">
+                                <img src="asserts/images/THE LANDLORD.png" alt="">
+                                <img src="asserts/images/ACADEMY.png" alt="">
                             </div>
                             <div>
                                 <a class="nav-link" href="b&h.html">
@@ -79,8 +79,8 @@
         <div id="mobile_header">
             <div class="logo_With_Nav">
                 <div class="logo">
-                    <img src="Assert/images/THE LANDLORD.png" alt="">
-                    <img src="Assert/images/ACADEMY.png" alt="">
+                    <img src="asserts/images/THE LANDLORD.png" alt="">
+                    <img src="asserts/images/ACADEMY.png" alt="">
                 </div>
                 <div>
                     <div class="bars_Background" id="nav_Bars">
@@ -110,7 +110,7 @@
                             <label for="formGroupExampleInput"
                                 class="form-label property_Parameter_Lable">STREET</label>
                             <div class="input-group column mb-2">
-                                <input type="text" id="street_name" class="form-control" placeholder="Street Name"
+                                <input type="text" id="street_name" class="form-control property_Details_Form_Field"  placeholder="Street Address"
                                     required>
                             </div>
                         </div>
@@ -118,35 +118,36 @@
                             <label for="formGroupExampleInput"
                                 class="form-label property_Parameter_Lable ">SUBURB</label>
                             <div class="input-group column mb-2">
-                                <input type="text" id="subrub_name" class="form-control" placeholder="Subrub Name"
+                                <input type="text" id="subrub_name" class="form-control property_Details_Form_Field" placeholder="Suburb Name"
                                     required>
                             </div>
                         </div>
                         <div class="col-12 col-md-3">
                             <label for="formGroupExampleInput" class="form-label property_Parameter_Lable">City</label>
                             <div class="input-group column mb-2">
-                                <input type="text" id="city_name" class="form-control" placeholder="City Name" required>
+                                <input type="text" id="city_name" class="form-control property_Details_Form_Field" placeholder="City Name" required>
                             </div>
                         </div>
                         <div class="col-12 col-md-3">
                             <label for="formGroupExampleInput" class="form-label property_Parameter_Lable">STATE</label>
-                            <div class="input-group column mb-2">
-                                <select id="state_name" custom_select>
-                                    <option value="ACT">ACT</option>
+                            <div class="column mb-2">
+                                <select id="state_name" class="property_Details_Form_Field" custom_select>
+                                    <option value="">State</option>
                                     <option value="NSW">NSW</option>
-                                    <option value="NT">NT</option>
+                                    <option value="VIC">VIC</option>
                                     <option value="QLD">QLD</option>
+                                    <option value="WA">WA</option>
                                     <option value="SA">SA</option>
                                     <option value="TAS">TAS</option>
-                                    <option value="VIC">VIC</option>
-                                    <option value="WA">WA</option>
+                                    <option value="ACT">ACT</option>
+                                    <option value="NT">NT</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-12 col-md-3">
                             <label for="formGroupExampleInput" class="form-label property_Parameter_Lable">TYPE</label>
                             <div class="input-group column">
-                                <select id="type" custom_select>
+                                <select id="type" class="property_Details_Form_Field" custom_select>
                                     <option value="Unit">Unit</option>
                                     <option value="Apartment">Apartment</option>
                                     <option value="Villa">Villa</option>
@@ -160,7 +161,7 @@
                             <label for="formGroupExampleInput"
                                 class="form-label property_Parameter_Lable">BEDROOMS</label>
                             <div class="input-group column">
-                                <select id="bedrooms" custom_select>
+                                <select id="bedrooms" class="property_Details_Form_Field" custom_select>
                                     <option value="1 Bedrooms">1 Bedroom</option>
                                     <option value="2 Bedrooms">2 Bedrooms</option>
                                     <option value="3 Bedrooms">3 Bedrooms</option>
@@ -173,7 +174,7 @@
                             <label for="formGroupExampleInput"
                                 class="form-label property_Parameter_Lable">BATHROOM</label>
                             <div class="input-group column">
-                                <select id="bathrooms" custom_select>
+                                <select id="bathrooms" class="property_Details_Form_Field" custom_select>
                                     <option value="1 Bathroom">1 Bathroom</option>
                                     <option value="2 Bathroom">2 Bathrooms</option>
                                     <option value="3 Bathroom">3 Bathrooms</option>
@@ -185,7 +186,7 @@
                             <label for="formGroupExampleInput"
                                 class="form-label property_Parameter_Lable">PARKING</label>
                             <div class="input-group column">
-                                <select id="parking" custom_select>
+                                <select id="parking" class="property_Details_Form_Field" custom_select>
                                     <option value="No Parking">No Parking</option>
                                     <option value="Single Car Space">Single Car Space</option>
                                     <option value="Double Car Space">Double Car Space</option>
@@ -202,7 +203,7 @@
                         <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_1">
                             <div class="kafelki_item">
                                 <div class="kafelki_number_container">
-                                    <img src="Assert/images/wallet.svg" alt="">
+                                    <img src="asserts/images/wallet.svg" alt="">
                                 </div>
                                 <p class="kafelki_text">PURCHASE PRICE</p>
                                 <p class="kafelki_name" id="widget-purchase-price">$0</p>
@@ -214,7 +215,7 @@
                         <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_2">
                             <div class="kafelki_item">
                                 <div class="kafelki_number_container">
-                                    <img src="Assert/images/cash.svg" alt="">
+                                    <img src="asserts/images/cash.svg" alt="">
                                 </div>
                                 <p class="kafelki_text">CASH REQUIRED</p>
                                 <p class="kafelki_name" id="widget-cash-required">$0</p>
@@ -226,7 +227,7 @@
                         <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_3">
                             <div class="kafelki_item">
                                 <div class="kafelki_number_container">
-                                    <img src="Assert/images/page.svg" alt="">
+                                    <img src="asserts/images/page.svg" alt="">
                                 </div>
                                 <p class="kafelki_text">TOTAL EXPENSES (I/O)</p>
                                 <p class="kafelki_name" id="widget-value-add">$0</p>
@@ -238,7 +239,7 @@
                         <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_4">
                             <div class="kafelki_item">
                                 <div class="kafelki_number_container">
-                                    <img src="Assert/images/bank.svg" alt="">
+                                    <img src="asserts/images/bank.svg" alt="">
                                 </div>
                                 <p class="kafelki_text">DAILY RATE</p>
                                 <p class="kafelki_name" id="widget-equity-io">$0</p>
@@ -250,7 +251,7 @@
                         <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_5">
                             <div class="kafelki_item">
                                 <div class="kafelki_number_container">
-                                    <img src="Assert/images/page.svg" alt="">
+                                    <img src="asserts/images/page.svg" alt="">
                                 </div>
                                 <p class="kafelki_text">Net Profit (P&I)</p>
                                 <p class="kafelki_name" id="widget-renovation-cost">$0</p>
@@ -262,7 +263,7 @@
                         <div class=" col-xxl-2 col-xl-4 col-lg-4 col-md-6 col-6" data-aos="fade-up" id="widget_6">
                             <div class="kafelki_item">
                                 <div class="kafelki_number_container">
-                                    <img src="Assert/images/cash2.svg" alt="">
+                                    <img src="asserts/images/cash2.svg" alt="">
                                 </div>
                                 <p class="kafelki_text">Return on Equity</p>
                                 <p class="kafelki_name" id="widget-rental-increase">0%</p>
@@ -475,9 +476,8 @@
                                             </div>
                                             <div class="input-icon input-icon-right"
                                                 style="display: flex; gap: 6px; align-items: center;">
-                                                <input type="text" id="management_fees_amount" class="form-control"
-                                                    placeholder="" style="width: 60px;
-                                       padding: 2px; padding-right: 22px;" />
+                                                <input type="text" id="management_fees_amount" class="form-control property_inner_input amountPercentage"
+                                                    placeholder="" style="width: 100px;" />
 
                                                 <span id="management_fees"></span>
                                             </div>
@@ -530,7 +530,7 @@
                                             <label for="formGroupExampleInput"
                                                 class="purchase_label interest_rate">Interest
                                                 Rate</label>
-                                            <input type="text" id="interest_rate" class="property_inner_input"
+                                            <input type="text" id="interest_rate" class="property_inner_input amountPercentage"
                                                 placeholder="">
                                         </div>
                                         <div class="total_loan">
@@ -622,14 +622,13 @@
                                             <input type="text" class="property_inner_input amountInput" id="daily-rate"
                                                 placeholder="">
                                         </div>
-                                        <div class="form-group" style="display:flex;">
+                                        <div class="form-group" style="display:flex; gap: 8px; align-items: center;">
                                             <div class="input-icon input-icon-right">
                                                 <input type="text" id="occupancy" placeholder=""
-                                                    style="width: 80px; margin-left: 15px; padding-right: 20px;"
-                                                    class="amountInput property_inner_input" />
-                                                <i style=" font-weight: 400;">%</i>
-                                            </div>
-                                            <label for="management_fees" style="margin-top: 2px;margin-left: 20px;">
+                                                    style="width: 80px; padding-right: 20px;"
+                                                    class="property_inner_input amountPercentage" />
+                                                                                           </div>
+                                            <label for="occupancy" style="margin-top: 2px">
                                                 Occupancy
                                             </label>
                                         </div>
@@ -701,7 +700,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
     </script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="Assert/javascript/custom.js"></script>
+    <script src="asserts/javascript/custom.js"></script>
     <script src="script.js"></script>
 </body>
 
