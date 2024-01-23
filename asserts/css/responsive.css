@@ -143,4 +143,12 @@
   .property_input input {
     max-width: 50%;
   }
+}@media screen and (min-width: 1400px) and (max-width: 1560px) {
+  input.property_inner_input{
+    width: 140px;
+  }
+  .purchase_label{
+    font-size: .7rem;
+  }
 }
+

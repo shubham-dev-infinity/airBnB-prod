@@ -9,7 +9,6 @@ body {
   overflow-x: hidden;
   background: #eef2f7;
 }
-
 a,
 span,
 a:hover,
@@ -114,10 +113,11 @@ section {
   border-radius: 8px;
   border: 1px solid var(--Background, #eef2f7);
   background: var(--White, #fff);
-
+  font-size: 0.8rem;
   /* Shadow/xs */
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
+
 select {
   appearance: none;
   -webkit-appearance: none;
@@ -152,9 +152,8 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 11px;
-  width: 52px;
-  height: 50.323px;
+  padding: 10px;
+  width: 40px;
   background: #eef2f7;
   border-radius: 6px;
   box-shadow: 0px 3.5px 5.5px 0px rgba(0, 0, 0, 0.02);
@@ -180,7 +179,7 @@ select {
 .kafelki_name {
   line-height: 14px;
   margin-top: 10px;
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: 700;
   font-family: montserrat, sans-serif;
   color: #0c0042;
@@ -188,7 +187,7 @@ select {
 
 .kafelki_text {
   color: #8391a2;
-  font-size: 16px;
+  font-size: 0.9rem;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -200,7 +199,7 @@ select {
 
 .property_Parameter_Lable {
   color: #344054;
-  font-size: 18px;
+  font-size: 0.9rem;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
@@ -278,7 +277,7 @@ input.property_inner_input {
 
 .purchase_label {
   color: #344054;
-  font-size: 15px;
+  font-size: 0.78rem;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
@@ -330,7 +329,7 @@ input.property_inner_input {
 
 .total_cash {
   margin: 20px 0;
-  padding: 20px;
+  padding: 1rem;
   border-radius: 10px;
   border: 0.5px solid var(--White, #fff);
   background: var(--Secondary, #225ccb);
@@ -341,7 +340,7 @@ input.property_inner_input {
 
 .total_cash h3 {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
@@ -363,7 +362,7 @@ input.property_inner_input {
 
 .annual_text {
   color: #344054;
-  font-size: 15px;
+  font-size: 0.8rem;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
@@ -519,7 +518,7 @@ i.fa-solid.fa-xmark {
   width: 100%;
   margin-bottom: 30px;
 }
-.logo img{
+.logo img {
   max-width: 250px;
 }
 
@@ -540,7 +539,7 @@ i.fa-solid.fa-bars {
 
 i.fa-solid.fa-bag-shopping,
 i.fa-solid.fa-building {
-  font-size: 20px;
+  font-size: 1rem;
   color: black;
 }
 
@@ -565,7 +564,7 @@ i.fa-brands.fa-airbnb {
 
 .sidbar_text {
   color: #000000;
-  font-size: 18px;
+  font-size: 0.9rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -764,13 +763,11 @@ i.fa-brands.fa-airbnb {
 .sb-sidenav .sb-sidenav-menu .nav .nav-link {
   display: flex;
   align-items: center;
-  padding-top: 0.75rem !important;
-  padding-bottom: 0.75rem !important;
   position: relative;
 }
 
 .nav-link {
-  padding: 0px;
+  padding: 10px;
   border-bottom: 1px solid var(--Background, #eef2f7);
 }
 
@@ -1050,24 +1047,24 @@ a.bg-dark {
 #sidebar-container,
 #layoutSidenav_nav {
   transition: width 0.5s;
-  max-width: 325px;
+  max-width: 300px;
 }
-.amountPercentage{
+.amountPercentage {
   color: gray !important;
 }
-.str-setupCost{
+.str-setupCost {
   padding-right: 14px;
 }
-.percentage_Wrapper{
+.percentage_Wrapper {
   position: relative;
 }
-.percentage_Wrapper input{
+.percentage_Wrapper input {
   padding-right: 20px;
 }
-.percentage_Wrapper label{
+.percentage_Wrapper label {
   z-index: 2;
 }
-.percentage_Symbole{
+.percentage_Symbole {
   position: absolute;
   top: 6px;
   right: 4px;

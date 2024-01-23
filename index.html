@@ -481,7 +481,6 @@
                                                 <div class="percentage_Wrapper">
                                                     <input type="text" id="management_fees_amount"
                                                         class="form-control property_inner_input amountPercentage"
-                                                        placeholder="0"
                                                         style="width: 130px;margin-left: 10px;padding-right: 20px;" />
                                                     <label for="management_fees_amount"
                                                         class="percentage_Symbole">%</span>
@@ -535,7 +534,7 @@
                                                 class="purchase_label interest_rate">Interest
                                                 Rate</label>
                                             <div class="percentage_Wrapper">
-                                                <input type="text" id="interest_rate" placeholder="0"
+                                                <input type="text" id="interest_rate"
                                                     class="property_inner_input amountPercentage">
                                                 <label for="interest_rate" class="percentage_Symbole">
                                                     %
@@ -543,7 +542,8 @@
                                             </div>
                                         </div>
                                         <div class="total_loan">
-                                            <p class="annual_text fund-borrowed">Total Funds Borrowed</p>
+                                            <p class="purchase_label interest_rate fund-borrowed">Total Funds Borrowed
+                                            </p>
                                             <div class=" end annual_text fund-borrowed-amount"
                                                 id="fund-borrowed-amount">
                                                 $300.000</div>
@@ -551,12 +551,12 @@
                                         <div class="loan_expenses principal-interest">
                                             <p class="d_text">PRINCIPAL & INTEREST (P&I)</p>
                                             <div class="expenses_loan_text">
-                                                <p class="annual_text"> Monthly Repayments </p>
+                                                <p class="purchase_label interest_rate"> Monthly Repayments </p>
                                                 <div class=" end annual_text monthly-repayment-amount"
                                                     id="monthly-repayment-amount">$</div>
                                             </div>
                                             <div class="expenses_loan_text">
-                                                <p class="annual_text">Annual Repayments</p>
+                                                <p class="purchase_label interest_rate">Annual Repayments</p>
                                                 <div class="end annual_text annual-repayment-amount"
                                                     id="annual-repayment-amount">$28,978</div>
                                             </div>
@@ -564,13 +564,13 @@
                                         <div class="loan_expenses">
                                             <p class="d_text">INTEREST ONLY (I/O)</p>
                                             <div class="expenses_loan_text">
-                                                <p class="annual_text">Annual Repayments</p>
+                                                <p class="purchase_label interest_rate">Annual Repayments</p>
                                                 <div class="end annual_text annual-repayment-amount"
                                                     id="interest_annual_repayment_amount">$2,972
                                                 </div>
                                             </div>
                                             <div class="expenses_loan_text">
-                                                <p class="annual_text">LVR</p>
+                                                <p class="purchase_label interest_rate">LVR</p>
                                                 <div class="end annual_text lvr-amount" id="lvr_amount">$28,978</div>
                                             </div>
                                         </div>
@@ -615,9 +615,9 @@
                                         <input type="text" class="property_inner_input amountInput amountInput"
                                             id="other-str-cost" />
                                     </div>
-                                    <div class="rental_income">
-                                        <h5>TOTAL SET UP COST</h5>
-                                        <h5 class="annual_rent" id="total_renovation_cost">$0</h5>
+                                    <div class="total_cash">
+                                        <h3>TOTAL SET UP COST</h3>
+                                        <h3 class="annual_rent" id="total_renovation_cost">$0</h3>
                                     </div>
                                 </div>
                             </div>
@@ -642,9 +642,9 @@
                                                 <label for="occupancy" class="percentage_Symbole">%</span>
                                             </div>
                                         </div>
-                                        <div class="rental_income">
-                                            <h5>GROSS ANNUAL RENT</h5>
-                                            <h5 class="annual_rent" id="purchased_annual_rent">$0</h5>
+                                        <div class="total_cash">
+                                            <h3>GROSS ANNUAL RENT</h3>
+                                            <h3 class="annual_rent" id="purchased_annual_rent">$0</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -653,7 +653,7 @@
                             <div class="property_box">
                                 <h3 class="profit_title">Profit Analysis</h3>
                                 <div class="profit_box">
-                                    <p class="d_text">VIELD (ANNUAL)</p>
+                                    <p class="d_text">YIELD (ANNUAL)</p>
                                     <div class="expenses_loan_text">
                                         <p class="annual_text annual-repayment-amount" id="asPurchased-grossYield">Net
                                             Yield
@@ -920,7 +920,6 @@
                                                 <div class="percentage_Wrapper">
                                                     <input type="text" id="rental-management_fees_amount"
                                                         class="form-control property_inner_input amountPercentage"
-                                                        placeholder="0"
                                                         style="width: 130px;margin-left: 10px;padding-right: 20px;" />
                                                     <label for="rental-management_fees_amount"
                                                         class="percentage_Symbole">%</span>
