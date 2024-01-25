@@ -129,7 +129,7 @@ $(document).ready(function () {
         var marketValue = parseFloat($('#market-value').val().replace(/[^0-9.-]/g, '')) || 0;
         var purchasePrice = parseFloat($('#purchase-price').val().replace(/[^0-9.-]/g, '')) || 0;
         $('#widget-purchase-price').text('$' + purchasePrice.toLocaleString());
-        if (marketValue > purchasePrice && marketValue && purchasePrice) {
+        if (marketValue > purchasePrice) {
             var discountAmount = marketValue - purchasePrice;
             var discountPercentage = marketValue !== 0 ? (discountAmount / marketValue) * 100 : 0;
             discountPercentage = (discountPercentage * 100) / 100;
@@ -139,7 +139,7 @@ $(document).ready(function () {
             $('.discount').show();
             $('.overprice').hide();
             $('#result-message').hide();
-        } else if (marketValue < purchasePrice && marketValue && purchasePrice) {
+        } else if (marketValue < purchasePrice) {
             var overpricedAmount = purchasePrice - marketValue;
             var overpricedPercentage = marketValue !== 0 ? (overpricedAmount / marketValue) * 100 : 0;
             overpricedPercentage = (overpricedPercentage * 100) / 100;
@@ -150,15 +150,10 @@ $(document).ready(function () {
             $('.discount').hide();
             $('#result-message').hide();
         }
-        else if(marketValue && purchasePrice) {
+        else {
             // Display a message in the else part with HTML
             $('#result-message').show();
-            $('#result-message').html("<p>Purchasing at Market Price</p>");
-            $('.overprice').hide();
-            $('.discount').hide();
-        }else{
-            $('#result-message').show();
-            $('#result-message').html("");
+            $('#result-message').html("<p>Purchasing at Market Price.</p>");
             $('.overprice').hide();
             $('.discount').hide();
         }
@@ -219,7 +214,7 @@ $(document).ready(function () {
         var strata_fees_amount = parseFloat($('#strata_fees_amount').val().replace(/[^0-9.-]/g, '')) || 0;
         var land_tax_amount = parseFloat($('#land_tax_amount').val().replace(/[^0-9.-]/g, '')) || 0;
         var maintenance_amount = parseFloat($('#maintenance_amount').val().replace(/[^0-9.-]/g, '')) || 0;
-        
+
         var management_fees_rate = parseFloat($('#management_fees_amount').val().replace(/[^0-9.-]/g, '')) || 0;
         var amount = grossAnnualRent * management_fees_rate * 0.01;
         if (isNaN(amount)) {
@@ -346,7 +341,7 @@ $(document).ready(function () {
     //--------------- AirBnB (Rental Model) --------------  //
     var annual_rent = 0;
     function property() {
-        var weekly_rent = parseFloat($('#week-rent')?.val()?.replace(/[^0-9.-]/g, '')) || 0;
+        var weekly_rent = parseFloat($('#week-rent').val().replace(/[^0-9.-]/g, '')) || 0;
         // console.log("weekly_rent :", weekly_rent);
         annual_rent = Math.round(weekly_rent * 52);
         $('#week-weekly-rent').text('$' + annual_rent.toLocaleString());
