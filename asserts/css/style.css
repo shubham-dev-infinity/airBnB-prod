@@ -277,7 +277,7 @@ input.property_inner_input {
 
 .purchase_label {
   color: #344054;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
@@ -514,6 +514,11 @@ i.fa-solid.fa-xmark {
   right: 0%;
 }
 
+.logo_With_Nav .logo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .logo {
   width: 100%;
   margin-bottom: 30px;
