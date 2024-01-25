@@ -1,4 +1,5 @@
 @media (max-width: 1200px) {
+
   i.fa-solid.fa-bag-shopping,
   i.fa-solid.fa-building {
     font-size: 16px;
@@ -25,9 +26,10 @@
 }
 
 @media (max-width: 1200px) {
-  .logo img{
+  .logo img {
     width: 200px;
   }
+
   #sidebar-container {
     max-width: 250px;
   }
@@ -66,6 +68,9 @@
 
   .logo_With_Nav .logo {
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .logo_With_Nav .logo img {
@@ -131,6 +136,7 @@
   .give_Width_350 {
     width: 300px !important;
   }
+
   .give_Full_Width {
     display: flex !important;
     width: 100% !important;
@@ -139,16 +145,30 @@
   #mobile_header {
     display: block;
   }
+
   .property_input input,
   .property_input input {
-    max-width: 50%;
+    max-width: 100%;
   }
-}@media screen and (min-width: 1400px) and (max-width: 1560px) {
+
+  .center {
+    position: unset;
+    transform: unset;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1560px) {
   input.property_inner_input{
     width: 140px;
+  }
+  input#management_fees_amount{
+    width: 95px !important;
+  }
+  .input-icon.input-icon-right{
+    gap: 15px !important;
   }
   .purchase_label{
     font-size: .7rem;
   }
 }
-
